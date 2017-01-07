@@ -1,9 +1,9 @@
-# projet BMP GoogleMaps
+# project BMP GoogleMaps
 It is a tool for interpreting maps from Google Maps for the visually impaired, developed in C. The maps processed are from a search of hotels near a point of interest. The card interpretation tool will identify the various elements (hotels, points of interest and public transport), situate them in relation to each other and develop a voice message describing the situation.
 
 
 ## Update
-Dernière mise à jour : 2016-01-15
+Last update : 2016-01-15
 
 ## Licence
 
