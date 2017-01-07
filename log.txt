@@ -1,0 +1,152 @@
+i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+i = 945 j = 503 , distance pixel = 96 et = 50 m 
+i = 644 j = 466 , distance pixel = 257 et = 100 m 
+i = 588 j = 457 , distance pixel = 311 et = 150 m 
+i = 135 j = 279 , distance pixel = 774 et = 400 m 
+i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+i = 388 j = 248 , distance pixel = 536 et = 250 m 
+i = 640 j = 245 , distance pixel = 310 et = 150 m 
+i = 669 j = 181 , distance pixel = 329 et = 150 m 
+i = 21 j = 153 , distance pixel = 915 et = 450 m 
+i = 40 j = 150 , distance pixel = 898 et = 450 m 
+i = 705 j = 52 , distance pixel = 414 et = 200 m 
+i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+i = 82 j = 19 , distance pixel = 907 et = 450 m 
+i = 851 j = 488 , distance pixel = 82 et = 0 m 
+i = 815 j = 375 , distance pixel = 88 et = 0 m 
+i = 236 j = 428 , distance pixel = 661 et = 350 m 
+i = 1203 j = 424 , distance pixel = 306 et = 150 m 
+i = 628 j = 423 , distance pixel = 269 et = 100 m 
+i = 919 j = 405 , distance pixel = 26 et = 0 m 
+i = 794 j = 312 , distance pixel = 148 et = 50 m 
+i = 1632 j = 269 , distance pixel = 750 et = 400 m 
+i = 691 j = 258 , distance pixel = 261 et = 100 m 
+
+ ------ 
+i = 236 j = 428 , distance pixel = 661 et = 350 m 
+
+ ------ 
+i = 1203 j = 424 , distance pixel = 306 et = 150 m 
+
+ ------ 
+i = 628 j = 423 , distance pixel = 269 et = 100 m 
+
+ ------ 
+i = 919 j = 405 , distance pixel = 26 et = 0 m 
+
+ ------ 
+i = 794 j = 312 , distance pixel = 148 et = 50 m 
+
+ ------ 
+i = 1632 j = 269 , distance pixel = 750 et = 400 m 
+
+ ------ 
+i = 691 j = 258 , distance pixel = 261 et = 100 m 
+time = 1449046979
+i = 236 j = 428 , distance pixel = 661 et = 350 m 
+time = 1449046979
+i = 1203 j = 424 , distance pixel = 306 et = 150 m 
+time = 1449046979
+i = 628 j = 423 , distance pixel = 269 et = 100 m 
+time = 1449046979
+i = 919 j = 405 , distance pixel = 26 et = 0 m 
+time = 1449046979
+i = 794 j = 312 , distance pixel = 148 et = 50 m 
+time = 1449046979
+i = 1632 j = 269 , distance pixel = 750 et = 400 m 
+time = 1449046979
+i = 691 j = 258 , distance pixel = 261 et = 100 m 
+time = 02/12/2015 10:04:25
+i = 635 j = 480 , distance pixel = 269 et = 100 m 
+| 02/12/2015 10:08:19 |i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+| 02/12/2015 10:08:19 |i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+| 02/12/2015 10:08:19 |i = 945 j = 503 , distance pixel = 96 et = 50 m 
+| 02/12/2015 10:08:19 |i = 644 j = 466 , distance pixel = 257 et = 100 m 
+| 02/12/2015 10:08:19 |i = 588 j = 457 , distance pixel = 311 et = 150 m 
+| 02/12/2015 10:08:19 |i = 135 j = 279 , distance pixel = 774 et = 400 m 
+| 02/12/2015 10:08:19 |i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+| 02/12/2015 10:08:19 |i = 388 j = 248 , distance pixel = 536 et = 250 m 
+| 02/12/2015 10:08:19 |i = 640 j = 245 , distance pixel = 310 et = 150 m 
+| 02/12/2015 10:08:19 |i = 669 j = 181 , distance pixel = 329 et = 150 m 
+| 02/12/2015 10:08:19 |i = 21 j = 153 , distance pixel = 915 et = 450 m 
+| 02/12/2015 10:08:19 |i = 40 j = 150 , distance pixel = 898 et = 450 m 
+| 02/12/2015 10:08:19 |i = 705 j = 52 , distance pixel = 414 et = 200 m 
+| 02/12/2015 10:08:19 |i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+| 02/12/2015 10:08:19 |i = 82 j = 19 , distance pixel = 907 et = 450 m 
+| 02/12/2015 10:09:26 |i = 927 j = 345 , distance pixel = 78 et = 0 m 
+| 02/12/2015 10:31:26 |i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+| 02/12/2015 10:31:26 |i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+| 02/12/2015 10:31:26 |i = 945 j = 503 , distance pixel = 96 et = 50 m 
+i = 945 j = 503 , distance pixel = 96 et = 50 m 
+| 02/12/2015 10:31:26 |i = 644 j = 466 , distance pixel = 257 et = 100 m 
+i = 644 j = 466 , distance pixel = 257 et = 100 m 
+| 02/12/2015 10:31:26 |i = 588 j = 457 , distance pixel = 311 et = 150 m 
+i = 588 j = 457 , distance pixel = 311 et = 150 m 
+| 02/12/2015 10:31:26 |i = 135 j = 279 , distance pixel = 774 et = 400 m 
+i = 135 j = 279 , distance pixel = 774 et = 400 m 
+| 02/12/2015 10:31:26 |i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+| 02/12/2015 10:31:26 |i = 388 j = 248 , distance pixel = 536 et = 250 m 
+i = 388 j = 248 , distance pixel = 536 et = 250 m 
+| 02/12/2015 10:31:26 |i = 640 j = 245 , distance pixel = 310 et = 150 m 
+i = 640 j = 245 , distance pixel = 310 et = 150 m 
+| 02/12/2015 10:31:26 |i = 669 j = 181 , distance pixel = 329 et = 150 m 
+i = 669 j = 181 , distance pixel = 329 et = 150 m 
+| 02/12/2015 10:31:26 |i = 21 j = 153 , distance pixel = 915 et = 450 m 
+i = 21 j = 153 , distance pixel = 915 et = 450 m 
+| 02/12/2015 10:31:26 |i = 40 j = 150 , distance pixel = 898 et = 450 m 
+i = 40 j = 150 , distance pixel = 898 et = 450 m 
+| 02/12/2015 10:31:26 |i = 705 j = 52 , distance pixel = 414 et = 200 m 
+i = 705 j = 52 , distance pixel = 414 et = 200 m 
+| 02/12/2015 10:31:26 |i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+| 02/12/2015 10:31:26 |i = 82 j = 19 , distance pixel = 907 et = 450 m 
+i = 82 j = 19 , distance pixel = 907 et = 450 m 
+| 02/12/2015 10:31:55 |i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+| 02/12/2015 10:31:55 |i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+| 02/12/2015 10:31:55 |i = 945 j = 503 , distance pixel = 96 et = 50 m 
+i = 945 j = 503 , distance pixel = 96 et = 50 m 
+| 02/12/2015 10:31:55 |i = 644 j = 466 , distance pixel = 257 et = 100 m 
+i = 644 j = 466 , distance pixel = 257 et = 100 m 
+| 02/12/2015 10:31:55 |i = 588 j = 457 , distance pixel = 311 et = 150 m 
+i = 588 j = 457 , distance pixel = 311 et = 150 m 
+| 02/12/2015 10:31:55 |i = 135 j = 279 , distance pixel = 774 et = 400 m 
+i = 135 j = 279 , distance pixel = 774 et = 400 m 
+| 02/12/2015 10:31:55 |i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+| 02/12/2015 10:31:55 |i = 388 j = 248 , distance pixel = 536 et = 250 m 
+i = 388 j = 248 , distance pixel = 536 et = 250 m 
+| 02/12/2015 10:31:55 |i = 640 j = 245 , distance pixel = 310 et = 150 m 
+i = 640 j = 245 , distance pixel = 310 et = 150 m 
+| 02/12/2015 10:31:55 |i = 669 j = 181 , distance pixel = 329 et = 150 m 
+i = 669 j = 181 , distance pixel = 329 et = 150 m 
+| 02/12/2015 10:31:55 |i = 21 j = 153 , distance pixel = 915 et = 450 m 
+i = 21 j = 153 , distance pixel = 915 et = 450 m 
+| 02/12/2015 10:31:55 |i = 40 j = 150 , distance pixel = 898 et = 450 m 
+i = 40 j = 150 , distance pixel = 898 et = 450 m 
+| 02/12/2015 10:31:55 |i = 705 j = 52 , distance pixel = 414 et = 200 m 
+i = 705 j = 52 , distance pixel = 414 et = 200 m 
+| 02/12/2015 10:31:55 |i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+| 02/12/2015 10:31:55 |i = 82 j = 19 , distance pixel = 907 et = 450 m 
+i = 82 j = 19 , distance pixel = 907 et = 450 m 
+| 02/12/2015 10:32:48 |i = 1112 j = 577 , distance pixel = 266 et = 100 m 
+| 02/12/2015 10:32:48 |i = 1164 j = 546 , distance pixel = 295 et = 150 m 
+| 02/12/2015 10:32:48 |i = 945 j = 503 , distance pixel = 96 et = 50 m 
+| 02/12/2015 10:32:48 |i = 644 j = 466 , distance pixel = 257 et = 100 m 
+| 02/12/2015 10:32:48 |i = 588 j = 457 , distance pixel = 311 et = 150 m 
+| 02/12/2015 10:32:48 |i = 135 j = 279 , distance pixel = 774 et = 400 m 
+| 02/12/2015 10:32:48 |i = 1398 j = 259 , distance pixel = 525 et = 250 m 
+| 02/12/2015 10:32:48 |i = 388 j = 248 , distance pixel = 536 et = 250 m 
+| 02/12/2015 10:32:48 |i = 640 j = 245 , distance pixel = 310 et = 150 m 
+| 02/12/2015 10:32:48 |i = 669 j = 181 , distance pixel = 329 et = 150 m 
+| 02/12/2015 10:32:48 |i = 21 j = 153 , distance pixel = 915 et = 450 m 
+| 02/12/2015 10:32:48 |i = 40 j = 150 , distance pixel = 898 et = 450 m 
+| 02/12/2015 10:32:48 |i = 705 j = 52 , distance pixel = 414 et = 200 m 
+| 02/12/2015 10:32:48 |i = 1436 j = 31 , distance pixel = 664 et = 350 m 
+| 02/12/2015 10:32:48 |i = 82 j = 19 , distance pixel = 907 et = 450 m 

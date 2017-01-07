@@ -1,0 +1,250 @@
+DSpeech (by Dimio)
+~~~~~~~~~~~~~~~~~~
+
+最新バージョンは次のリンクからお願いします: "http://dimio.altervista.org/"
+
+
+PROGRAM DESCRIPTION:
+プ　ロ　グ　ラ　ム　概　説
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DSpeechは、ASR（Automatic Speech Recognition=自動スピーチ認識）の機能を統合したTTS（Text To Speech=テキストのスピーチ化）プログラムです。
+DSpeechは書かれたテキストを言葉に変えて、直接テキストをMP3またはWAVファイルに変換することもできます。
+プログラムは特に軽くて使いやすくデザインされていて、どんなインストールでも必要とします。
+DSpeechの主な特徴は、
+
+
+1. 書かれたテキストを言葉にし、MP3またはWAVファイルの出力テキストに変換します。
+2. 異なる声を簡単に選択でき、対話をつくるために、声を統合するオプションを持つ。
+3. 統合化された音声認知システムは、ユーザーに双方向ダイアログを提供します。
+4. 各々の声は独立した構成になっている。
+5. TAGを利用すると、再生（速度、ボリュームと頻度）の間、様々なダイナミックな声が提供されます。また休止を挿入したり、語彙を強調したり、単語をスペルアウトすることもできます。
+6. プログラムは、クリップボードのテキスト内容を取り込み、コンテンツを再作成することができます。
+7. DSpeechは、全てのSAPI 5対応音声エンジンと互換性を持ちます。
+
+
+TEXT TO SPEECH:
+テキストからスピーチへ：
+~~~~~~~~~~~~~~~~~~~~~~
+
+メイン画面にテキストを挿入してください。
+テキストを発話するための音声を選ぶために、メインウインドウスクリーンで音声メニュー（画面右側）にアクセスしてください。右上の音声選択コントロールパネル（Voice Select）で声を選び、下方にある調整ボタンで品質、ボリューム、速度と頻度を調節することができます。
+音声の特徴を修正し挿入するため、またキーワードを挿入するために、カスタムされたTAGを使います。
+
+
+
+
+AUDIO OPTIONS:
+音声オプション：
+~~~~~~~~~~~~~~~~~
+
+それぞれの音声でオーディオ出力の特性を選ぶことができます。
+音質の劣化を避けるために、使用中の音声と同じビット率を使ってください。
+例えば、基本の音質が「8 KHzの16ビットモノラル」だとすると、高音質は「16 KHzの16ビットモノラル」又は「22KHzの16ビットモノラル」ということです。
+こうした設定は、特にテキストファイルをWav又はMp3に出力変換する際に重要になります。
+選択された音声の特性より高品質の音声出力を設定する際は、音質を低下させることになるかもしれません。
+
+
+
+CONVERSION IN FILE WAV OR MP3:
+WAV又はMP3ファイルへの変換：
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+「ファイル」メニューから‘wav 又は mp3 ファイルに名前を付けて保存する.’を選択するか、Ctrl+Shit+Sのショートカットキーを使用します。
+次にオーディオフォーマットを選択し、出力するファイル名を作成してください。mp3フォーマットを選択した場合は、オプションメニュー の ‘mp3形式を選択する.’から圧縮の特性を指定することができます。Optimize Size（最適サイズ；より小さいファイルサイズ）、Balanced（最適バランス）、Optimized Quality（最適品質；より大きなファイルサイズが必要）の中から選ぶことができます。
+
+
+EDITING THE TEXT:
+テキストの編集：
+~~~~~~~~~~~~~~~
+
+標準的な編集の基本機能（検索、置き換え、削除など）の他に、DSpeechには「不必要な改行取り除き」機能があります。これは、合成音によって読まれるがゆえのスムーズさの限界が生じるテキスト上での全ての不必要な改行を除くのに役立ちます。
+特にテキストをページ付けされた文書から取り込む場合、TTSで読むと品質をそこなう一連の改行を含むことがよくあるので、これは大切な機能となります。
+
+
+CREATION OF AUDIO FILES:
+オーディオファイルの作成：
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+オプションメニュー の‘ オーディオブック作成’を参照してください。オーディオフォーマットが選択でき、いくつかのオプションから選ぶことができます。例えば、各ファイルの長さを選ぶことができます。また、作成したいオーディファイルのテキスト中に"#BREAK"のキーワードを挿入することで手動で長さを設定することもできます。
+さらにファイルメニューの‘ 追加’機能を使ってテキストファイルを挿入することもできます。
+これは自動的に"#BREAK"というキーワードを挿入し、別々のテキストファイルの細分化を簡単にできるようにします。またテキストの最初に"#BREAK"を手動で挿入することができるようになり、ＣＤリーダーや旧バージョンのMP3プレーヤーとの互換性を維持するのに必要となるかもしれません。
+
+
+VOCAL RECOGNITION:
+音声認識：
+~~~~~~~~~
+
+DSpeechは、スクリプトの簡単なシステムを使って音声認識システムをサポートしています。
+これはユーザーとの直接対話を可能にしたものです。以下がその例です。
+CONSUMER: "Computer"
+PC: "Ready computer, who are you? "
+CONSUMER: "Dimio"
+PC: "Welcome then"
+
+スクリプトのシステムは極めてBASICに類似しており、以下のキーワードがサポートされています。
+
+#VOICE NomeVoce
+#I GIVE
+#EXIT DO
+#LOOP
+#RECOGNIZE Parola1, [Parola2], [OTHER_WORDS]...
+#RECOGNIZE_WITH_TIMEOUT Secondi, Parola1, [Parola2], [OTHER_WORDS]...
+#IF RECOGNIZED Parola1, [Parola2], [OTHER_WORDS]...
+#IF TIMEOUT
+#END IF
+#CALL NomeSub
+#Sub NomeSub
+#END SUB
+#RANDOM
+#HOUSES
+#END RANDOM
+#EXECUTE PathFileOProgramma
+#OPEN FileToSpeech.txt
+#STOP
+#BREAK
+#PLAY FileName.wav
+#WAIT nSecondi
+#CLOSE
+
+
+
+右クリックによる文脈メニューの中に、関連サンプルのついたKEYWORDSが表示されます。音声認識のためのスクリプトサンプルを選ぶことができます。サンプルは以下の通りです。
+
+#VOICE Marco
+I am Angelus the computer of Dimitri. You are?
+#I GIVE
+	#RECOGNIZE Dimitri, Gloria, OTHER_WORDS
+	#IF RECOGNIZED Dimitri
+		Angelus waiting for instructions.
+		#EXIT DO
+	#END IF	
+	#IF RECOGNIZED Gloria
+		You have mistaken computer, yours is that of side.
+		#EXIT DO
+	#END IF	
+	#IF RECOGNIZED OTHER_WORDS
+		#RANDOM
+		#HOUSES
+			Can you repeat please? I have not understood your name.
+		#HOUSES
+			What have you said? Can you Repeat?
+		#HOUSES
+			I have not understood what you have said, perhaps, simply, your name I don't know him/it.
+		#END RANDOM
+	#END IF	
+#LOOP
+
+
+音声認識システムは英語の音声学に準拠しています。したがって、明瞭な英語の発音を使うことが必要となります。例えば、コンピューターに認識させるために、"Russia"という語は "Rassya"と発音することが大切になります。
+
+
+SHORTCUTS:
+ショートカット：
+~~~~~~~~~~~~~
+
+
+以下のショートカットキーがサポートされています。
+
+  F1 = 編集画面へ
+  F4 = 一時中断/再開
+  F5 = 話す/停止
+  F6 or ALT + UP = 前の行を話す
+  F7 or ALT + LEFT = 現在の行を話す
+  F8 or ALT + DOWN = 次の行を話す
+  F9 or ALT + RIGHT = カーソルの位置から話す
+  F11 = 前の音声へ移動
+  F12 = 次の音声へ移動
+  ESC = 停止
+  ALT+1 = 音量を上げる
+  ALT+2 = 音量を下げる
+  ALT+3 = スピードを上げる
+  ALT+4 = スピードを下げる
+  ALT+5 = ピッチを上げる
+  ALT+6 = ピッチを下げる
+
+
+
+COMMAND LINE:
+コマンド：
+~~~~~~~~
+
+ファイル名を指定してを開くことができ、自動的に希望するプロセスで開始することができます。つまり、プログラムは自動で特定の機能を用意することができるのです。
+
+SYNTAX:
+システム命令
+
+ファイルの複製を始める：
+DSpeech.exe / FileToSpeech.txt
+
+
+テキストファイルをmp3ファイルに変換する：
+DSpeech.exe /mp3 origine.txt [destinazione.mp3]
+
+
+テキストファイルをwavファイルに変換する：
+DSpeech.exe /wav origine.txt [destinazione.wav]
+
+
+
+MINIMUM SYSTEM CONFIGURATION:
+最低システム設定：
+~~~~~~~~~~~~~~~~~~~~
+
+Windows XPとVistaは、SAPI 5に準拠しています。したがって、どのような追加プログラムのインストールも必要としません。
+Windows NT4及び2000は、SAPI 5に準拠していないため、MS-SAPIをインストールする必要があります。以下よりダウンロードして実行してください。
+http://aldostools.mysite4now.com/sapi51.msi
+http://www.mbsoft.biz/download/sapi51.exe
+http://www.arlington.com.au/sapi51.msi
+
+
+同様にWindows NT4及び2000の場合で、スピーチ認識（Speech Recognition）機能を使いたい場合は、MS-Recognition Engineをインストールする必要があります。ダウンロードは以下より行ってください。
+http://clans.gameclubcentral.com/shoot/SR.zip
+
+スピーチ認識（Speech Recognition）は、Windows XP/VISTAではプリインストールされています。
+
+DSpeechは、スクリーン解像度を最低1024x768で要求しています。
+DSpeechは、Windows 95/98/MEのPCでは動作しません。
+
+
+
+VOICES:
+音声：
+~~~~~~~
+
+DSpeechでは、お使いのコンピューター上でプリインストール及び追加インストールされた音声を使用します。Windows XPではMicrosoft SAM (英語版)が唯一プリインストールされています。Windows NT/2000でSAPI5がインストールされている場合は、Mike と Maryの声が英語で入っています。ダウンロードはこちらから。
+http://download.microsoft.com/download/speechSDK/SDK/5.1/WXP/EN-US/Sp5TTIntXP.exe
+
+
+プリインストールされている音声（Sam, Mary, 及び Mike）は、有料の音声に比べ質が劣ります。有料音声を希望される場合は、下記のような販売先があります。
+Acapela (ナチュラルさに関してはベストではないものの明瞭でわかりやすい音声)
+Cepstral (価格は手ごろでそこそこの音質だが、最高品質とは言いがたい）.
+Loquendo (表現力、ナチュラルさにおいては、恐らく最高であるが、高価格である)
+RealSpeak (良質であり、いくつかの音声はWindows Vistaに組み込まれているようである)
+VoiceWare (そこそこの品質を保っている)
+
+
+
+Notes:
+注意：
+~~~~~~
+
+サイズの大きなMP3ファイルがテキストに挿入された際、前の行の複製とオーディオファイルの再生の間でちょっとした中断が起きるかもしれません。これはよくあることで、バグを引き起こすようなものではありません。ファイルがwavやmp3で保存されると、この問題もきれいになくなります。
+
+音声の圧縮をmp3形式で行うために、codec Blades（www.mp3dev.org）が役に立ちます。
+これはパケットに含まれる"Lame.exe"ファイルと一致します。
+
+
+PROGRAMERS:
+プログラム開発：
+~~~~~~~~~~~~~~~~
+Dimitrios Coutsoumbas (Dimio)
+SKYPE  : katafratto
+ICQ    : 145633952
+E-MAIL : cyberdimio@gmail.com
+HOME   : http://dimio.altervista.org/
+
+
+BETA-TESTERS:
+~~~~~~~~~~~~~
+Talksina (talksina@gmail.com)

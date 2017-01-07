@@ -1,0 +1,480 @@
+DSpeech - HISTORY
+~~~~~~~~~~~~~~~~~
+
+
+v. 1.62.1
+
+- Miglioramenti nell'UI.
+- Svariati upgrade nelle routine di conversione.
+- Aggiornamenti minori.
+
+v. 1.62
+
+- Introdotta la compatibilità con i nomi di file e i percorsi Unicode.
+- Aggiornamenti minori.
+
+v. 1.61.1
+
+- Aggiunta la possibilità di scaricare un internet link ogni 30 secondi (prima il limite minimo era un minuto).
+- Ora, se si disattiva il Tracking è possibile scorrere a piacimento il testo durante la riproduzione dello stesso.
+- Aggiunta una voce di menu per cancellare il contenuto del ClipBoard.
+- Aggiunta la possibilità di aggiungere l'opzione APPEND al menu contestuale di Explorer.
+- Trasferite alcune opzioni relative a determinati settaggi in posizioni più consone.
+- Ora la funzione Replace consente di trovare e sostituire anche stringhe con andate a capo.
+- Fixato un bug che impediva la corretta sincronizzazione tra parlato e testo selezionato, nel caso il testo in esame presentasse virgolette di vario genere. 
+- Migliorata l'opzione per la rimozione dei numeri di pagina, autore e relativo titolo dalle singole pagine PDF.
+- Ritocchi all'UI e Fix minori.
+
+v. 1.61
+
+- Aggiunta la possibilità di scegliere il formato audio di output per le conversioni Batch.
+- Ora è possibile trascinare un nuovo file da aprire anche nella finestra dei file aperti di recente.
+- Migliorate alcune voci di menù in modo da renderle più intuitive e comprensibili, idem per svariate sottofinestre di settaggi.
+- Aggiunta la possibilità di scegliere se, tra un file e il successivo file appended, vada inserita o meno la keyword BREAK.
+- Estese le opzioni di split per gli audiolibri.
+- Ora nella StatusBar vengono rappresentate la posizione del cursore e le dimensioni complessive del testo.
+- Fixati alcuni problemi grafici minori dell'interfaccia.
+- Fix minori.
+
+v. 1.60.9
+
+- Migliorata la funzione di Pause/Resume.
+- Aggiunta la possibilità di interrompere la riproduzione del testo cliccando sul testo stesso.
+- Aggiunto il pulsante "Transparent" per rendere la finestra principale del programma trasparente, il che rende visibile ciò che si trova al di sotto della stessa.
+- Aggiunto un pulsante per evidenziare e riprodurre la frase sulla quale è posizionato il cursore.
+- Fixati alcuni bug rari.
+- Minimi ritocchi all'UI.
+- Nota: i pulsanti "Phrase" e "Transparent" sono più che altro dei placeholders per eventuali nuove funzionalità che possono così venire introdotte in un secondo tempo senza che ci sia per questo la necessità di stravolgere l'interfaccia.
+
+v. 1.60.8
+
+- Migliorato il menu a tendina con le voci che si possono selezionare, ora il nome delle voci è relativamente ridotto e il menu stesso è stato allargato in modo che sia possibile visualizzare i vari tipi di voce con facilità.
+- Aggiunta la possibilità di specificare se, dopo la creazione e il salvataggio di un file audio su di esso deve aprirsi una finestra di explorer con la selezione dello stesso.
+- Ogni tanto un fumetto ricorda che le KEYWORDS devono stare da sole su di una linea e non possono stare insieme ad altre parole.
+- Aggiunto un avviso sonoro per indicare l'attivazione/disattivazione tramite F10 degli HotKeys globali.
+- Fix minori e modifiche minime all'UI.
+
+v. 1.60.7
+
+- Aggiunta un'opzione (menu Options --> Accessibility) che consente di attivare/disattivare gli HotKeys globali (cioè quel gruppo di HotKeys che vengono intercettati anche se DSpeech sta lavorando in Background o se si sta lavorando con un altro programma) con la semplice pressione del tasto F10. Ciò può essere molto utile, ad esempio immaginiamo che si voglia ricominciare la lettura di un testo attualmente in fase di riproduzione ma senza dovere per questo abbandonare la propria situazione in (x es.) Outlook, a questo puntè è sufficiente premere F10, premere poi F9 (che ordina a DSpeech di ricominciare la lettura da capo) e poi premere nuovamente F10 per disattivare tutto il resto degli HotKeys che magari ci potrebbero disturbare se stiamo facendo altre cose in quel momento (questa opzione può anche essere attivata semplicemete cliccando sull'iconcina della bacchetta).
+- Ulteriori piccole modifiche e Fix minori.
+
+v. 1.60.6
+
+- Aggiunta, nel menu contestuale (Right-Click), la possibilità di eliminare dal testo tutte le occorrenze della stringa attualmente selezionata (Remove Each). In questo modo è possibile eliminare velocemente eventuali caratteri strani senza per questo dover utilizzare la funzione "Replace" e/o applicare tabelle di conversione.
+- Fixati alcuni bug tra i quali l'errore che si generava aprendo dei PDF difettosi.
+
+v. 1.60.5
+
+- Aggiunto il parametro da linea di comando "/VOICE" che permette di specificare la voce da usare. Va fatto seguire da una stringa col nome della voce tra virgolette (non è necessario che sia completo), ad esempio:
+DSpeech /VOICE "Silvia"
+- Incrementate le possibilità di scelta per l'intervallo tra i reload delle pagine web (ora si va da 1 minuto a 1 ora).
+- Il comando "Store Pos" per memorizzare la posizione del cursore, ora consente di usare slot multipli o il consueto Slot singolo come di consueto.
+- Inserito un contatore per il numero complessivo dei caratteri e un LED per indicare quando è attiva la registrazione audio.
+- Svariate modifiche e Fix minori.
+
+v. 1.60.4
+
+- Modificato interamente il Layout degli Internet Links.
+- Nella funzione di Auto-reload delle pagine Internet può ora essere specificato l'intervallo di tempo.
+- Ora, nelle tabelle di conversione, è possibile specificare dei caratteri ASCII indicandoli col rispettivo numero, una cosa tipo [32] che corrisponde al codice ascii 32 e cioè allo spazio. E' possibile specificare delimitatori personalizzati (di default i delimitatori sono la doppia partentesi quadra: [[32]].
+- Aggiunta la possibilità di applicare in automatico la tabella di conversione di Default anche al testo copiato dal ClipBoard.
+- Aumentate le dimensioni massime del testo che può essere copiato in automatico dal ClipBoard (da 10.000 caratteri a 1.000.000 di caratteri).
+- Svariate modifiche e Fix minori.
+
+v. 1.60.3
+
+- Ora Volume, Speed e Pitch vengono visualizzati non solo graficamente, ma anche con il loro preciso valore numerico.
+- Ora la funzionalità per il doppiaggio dei film supporta anche VideoLAN VLC Player e MPV Player oltre al già citato Media Player Classic & C.
+- Se si tenta di aprire un file video, tenta di aprire il corrispondente file di sottotitoli (se presente).
+- Aggiunta l'opzione "Find Target File", per aprire una finestra di Explorer sul file attualmente aperto.
+- Ora è possibile specificare ogni quanti minuti si vuole che avvenga il salvataggio automatico (o anche disattivarlo del tutto naturalmente).
+- Nella barra di stato è ora presente un settore che indica l'estensione del file aperto e la sua tipologia (indicata da un apposito colore).
+- Ora, se non è selezionata la funzione "Allows Manage SRT files" DSpeech non è in grado di aprire i file SRT (ciò ha un significato, infatti non tutti conoscono i file SRT, quanti non li conoscono è opportuno che tengano disattiva tale funzione).
+- Migliorata la gestione dei Media Players nell'ambito della funzionalità per il doppiaggio dei film.
+- Ora, al primo avvio, DSpeech tenta di selezionare la voce migliore tra quelle disponibili nella lingua del sistema, lo stesso fa per la voce del testo tra virgolette, che viene quindi anch'essa attivata di default.
+- Introdotti alcuni avvisi di sicurezza per tutelare l'utente di fronte ad operazioni potenzialmente pericolose.
+- Ora, le opzioni del menu contestuale di explorer per aprire e riprodurre un file con DSpeech o per convertirlo in wav o mp3, alla chiusura del programma, non determinano il salvataggio delle impostazioni.
+- Fixato un bug concettuale dell'ambiente di sviluppo che determinava, all'apertura del programma, la creazione di un file nella directory dei temporanei (si trattava del file relativo all'icona del programma, mentre ora l'icona viene creata e gestita dal programma stesso).
+- Modifiche e Fix minori.
+
+v. 1.60.2
+
+- DSpeech è ora in grado di doppiare i Film leggendone i sottotitoli durante la visione, supporta quindi i file di sottotitolo (formato .SRT). Tramite questa funzionalità è possibile farsi leggere i sottotitoli mentre si guarda un film senza essere costretti a leggerli sullo schermo (cosa che spesso impedisce di seguire bene il film). Se si è impostato una voce diversa per la lettura del testo tra virgolette, questo migliorerà il risultato finale, perchè lo standard dei sottotitoli prevede la doppia voce. L'unico Media Players supportato da questa funzione, al momento, è Media Player Classic e successivi.
+- Ora, se si sta leggendo un file SRT ed è selezionata l'apposita voce, quando si avvia la riproduzione, viene fatto partire anche il relativo video, tramite il Media Player attualmente in uso. Se si sta utilizzando Media Player Classic o successivi, la riproduzione e il video vengono sincronizzati in qualunque punto del testo ci si trovi, per cui, ad esempio, se si avvia la riproduzione da metà del testo, anche il video verrà avviato a partire dalla metà del film. Se invece si utilizzano degli altri Media Player, la riproduzione riprenderà sempre dall'inizio. (Ciò potrà essere cambiato in futuro a patto che il Media Player in questione disponga della possibilità di avviare, specificandolo tramite linea di comando, un filmato a partire da nnn millisecondi.
+- Introdotto il parametro da linea di comando "/MINIMIZE" per avviare il programma minimizzato.
+- Modifiche e Fix minori.
+
+v. 1.60.1
+
+- Introdotto un sistema di preprocessing per formattare i testi, infatti, per un limite di Windows, le caselle di testo non possono contenere linee più lunghe di 1024 caratteri, in questo caso vengono introdotte delle andate a capo che spezzano, nella maniera più naturale possibile, queste linee troppo lunghe rendendole perfettamente utilizzabili.
+- L'applicazione della tabella di conversione di default e la rimozione dei ritorni a capo inutili viene ora effettuata all'apertura di un file invece che al momento della sua conversione in wav o mp3.
+- Inserita la possibilità di scegliere se i comandi "Speak From Current/Previous/Next/Start Line" debbano far si che venga letta la sola linea indicata o che la riproduzione prosegua con le linee successive.
+- Aggiunta la funzionalità Undo per annullare l'ultima modifica fatta al testo (Undo).
+- Ora i comandi "Store Pos" e "Restore Pos" funzionano anche mentre la riproduzione è attiva.
+- Svariate modifiche e Fix minori.
+
+v. 1.60
+
+- Revisione dell'interfaccia, i pulsanti per riprodurre da inizio testo e riga, dalla linea precedente e seguente sono stati raccolti insieme e resi più intuitivi anche graficamente senza che ciò comprometta l'usabilità tramite screen readers. Anche il pulsante per leggere il contenuto del ClipBoard è stato spostato.
+- Introdotta la possibilità di utilizzare dei comandi vocali per comandare il programma (ad esempio "PLAY", "SPEAK", "PAUSE" o "DISABLE" per disattivare i comandi vocali stessi). Ovviamente, perchè questa funzionalità operi bene è necessario che il microfono col quale vengono dati gli ordini non capti DSpeech mentre riproduce del testo, altrimenti il programma potrebbe comandare se stesso con risultati del tutto imprevisti.
+- Tramite due nuovi pulsanti è ora possibile memorizzare l'attuale posizione del cursore e ripristinarla in un secondo tempo, questo è utile se, per esempio, si vuole andare a vedere un punto specifico del testo che si sta leggendo e poi ritornare al punto da cui si era lasciato il segno.
+- Un nuovo pulsante permette ora di visualizzare rapidamente la finestra con i documenti recenti (questo è più che altro un PlaceHolder, se un giorno DSpeech verrà arricchito di una nuova importante funzione, questo tasto potrà essere utilizzato per essa).
+- Ora il comando "/PLAY" da linea di comando aggiunge in coda al testo il comando "#CLOSE", per cui DSpeech legge il testo interessato e poi si chiude automaticamente, idem il comando contestuale di explorer.
+- Ora nelle registrazioni da microfono e successivi salvataggi viene memorizzato il path e la scelta fatta tra wav e mp3.
+- Riassegnate alcune delle iconcine di scelta rapida ad altre opzioni.
+- [TECNICA] Ora l'opzione per includere un breve intervallo di silenzio all'inizio e alla fine del file di output utilizza la KeyWord WAIT e non più il TAG SILENCE che dava spesso problemi visto che ogni engine TTS interpreta i TAGs a modo suo.
+- Svariate modifiche e Fix vari.
+
+v. 1.58.8
+
+- Inserita una finestra che permette di aprire i documenti aperti di recente, essa può essere visualizzata ad ogni avvio o anche a richiesta dell'utente durante l'esecuzione (dal menu File o con la combinazione Ctrl+R).
+- Introdotta una nuova opzione (Smart HotKeys), attiva di default, che attiva un gruppo di HotKeys semplificati per le operazioni più comuni. Ad esempio, per avviare o stoppare la lettura del testo è sufficiente premere la barra spaziatrice (o Ctrl+Space se è la casella di testo ad avere il fuoco), il tasto Home riavvia la lettura dall'inizio della linea corrente mentre i tasti PagUp e PagDown servono a leggere la frase precedente e successiva.
+- Resi più intuitivi i nomi di alcune opzioni e voci di menu.
+- Eliminato l'EasterEgg (tutto sommato inutile).
+- Nota di versione per i Traduttori: diverse opzioni hanno ora un ToolTip (il fumetto che compare quando ci si posiziona sopra col mouse) che spiegano meglio la funzione cui fanno riferimento; si possono tradurre senza problemi, ciononostante consiglio di attendere prima di farlo, infatti il mio inglese non è perfetto ed è probabile che nelle prossime versioni alcuni di essi verranno modificati.
+- Aggiunto uno Splash Screen iniziale (disattivabile dal menu Opzioni --> Advanced).
+- Riassegnate alcune delle iconcine di scelta rapida ad opzioni di maggiore utilità.
+- Modifiche e Fix minori.
+
+v. 1.58.7
+
+- Ora l'attesa generata dalla KeyWord "WAIT_ANYKEY" può essere interrotta non solo dalla pressione di un tasto qualsiasi, ma anche dal semplice click del Mouse.
+- Introdotta la KeyWord "DELAY" che permette di introdurre un'attesa da 100 a 900 millisecondi prima di proseguire.
+- Da adesso, le registrazioni effettuate direttamente dal microfono possono essere salvate sotto forma di file mp3 oltre che nel consueto formato wav.
+- Ora nelle opzioni per la creazioni di audiolibri è possibile specificare da 100 millisecondi a 5 secondi come ritardo interlinea (prima il range andava da 1 a 5 secondi).
+- Aggiornata la parte di menu contestuale relativa alle KeyWords.
+- Ora, se il file ini in uso è stato generato da un'altra versione di DSpeech, questo viene cancellato e ignorato, si eliminano così tutti i problemi di incompatibilità tra file ini delle diverse versioni.
+- Modifiche e Fix minori.
+
+v. 1.58.6
+
+- Ridotto al minimo possibile il tempo di transizione tra una linea e l'altra.
+- Aggiunta la possibilità, all'apertura dei file PDF, di rimuovere in automatico i numeri di pagina e il titolo del testo che spesso si ritrova subito dopo e che, durante la lettura, costituisce una fastidiosa quanto insistente interruzione.
+- Rimosse le opzioni per mantenere il formato fisico originario dei file PDF (praticamente inutili, se non dannose).
+- Aggiunta la possibilità di salvare in automatico i settaggi ogni 15 minuti (può essere utile per salvare il segno del punto a cui si è arrivati mentre si sta leggendo un testo in caso di blackout).
+- Ora la selezione automatica delle parole mentre vengono pronunciate funziona perfettamente anche se si specifica di usare una voce diversa per il testo tra virgolette (finora veniva selezionata l'intera linea al posto delle singola parole).
+- Ora DSpeech tiene memoria dello stato della finestra (massimizzato o meno) e lo ripristina al successivo riavvio.
+- Ora il "DO - LOOP" permette, se lo si desidera, di limitare il numero dei Loop al valore voluto, ad esempio, se si vuole che il ciclo venga ripetuto per 4 volte, si dovrà scrivere "LOOP 4".
+- Inserita la possibilità di scegliere il simbolo o l'insieme di simboli che precedono le Keywords facendole riconoscere come tali (di default questo simbolo è il cancelletto).
+- Modifiche e Fix minori.
+
+v. 1.58.5
+
+- Aggiunta la KeyWord h.
+- Aggiunta la KeyWord "TOP" che mette in primo piano la finestra principale di DSpeech.
+- Aggiunta una voce di menu, nel menu Help, visibile solo con la modalità Expert Mode attiva, per inserire delle frasi preimpostate, ciò può essere utile per fare dei test.
+- Ora la Keyword "STOP" viene supportata anche durante le conversioni in file audio.
+- Ora l'immagine dell'annunciatore viene automaticamente ridimensionata in base alle dimensioni del riquadro.
+- Modifiche e Fix minori.
+
+v. 1.58.4
+
+- Aggiunta la KeyWord "WAIT_ANYKEY" che mette il programma in attesa della pressione di un tasto qualsiasi per proseguire la riproduzione.
+- Aggiunte le KeyWord "HIDE" e "SHOW" per nascondere e visualizzare di nuovo la finestra principale del programma.
+- Aggiunta la KeyWord "CLEAR che serve a cancellare il testo dalla finestra.
+- Aggiunta la KeyWord "SHUTDOWN" per spegnere il computer a comando (al termine della riproduzione di un testo).
+- Aggiunta la KeyWord "SELFDESTRUCT" che serve a cancellare dal disco l'eseguibile di DSpeech, il file ini e il file attualmente aperto al termine della riproduzione di un testo.
+- Aggiunta la KewWord "SELFDESTRUCT_AND_SHUTDOWN" che agisce come una somma delle prime due.
+- Aggiunta le KeyWord "DEL" che serve a cancellare dal disco un dato file o una data cartella con tutto il suo contenuto (ad esempio il file di testo appena riprodotto).
+- Aggiunta la possibilità di attivare la modalità avanzata dell'interfaccia utente che abilita alcune voci di menu aggiuntive e consente di fare altre cose che è meglio siano tenute nascoste ai principianti, come la possibilità di registrare durante la riproduzione audio.
+- Fixato un bug che impediva la traslazione della finestra di Help.
+- Modifiche e Fix minori.
+
+v. 1.58.3
+
+- Eliminato un problema insito in alcune voci (le Loquendo soprattutto) che, di fronte a determinate frasi o combinazioni di parole, bloccava la riproduzione del testo e che doveva poi essere riavviata a mano.
+- Fixato il bug che impediva il corretto funzionamento della Keyword "PLAY", probabilmente introdotto dalla v1.58.
+- Modifiche e Fix minori.
+
+v. 1.58.2
+
+- Aggiunta la possibilità di associare l'apertura di DSpeech alle estensioni testuali libere e disponibili.
+- Ora è possibile abilitare il tracciamento anche con impostata una voce personalizzata per il testo tra virgolette.
+- Introdotta la possibilità di applicare in maniera automatica le tabelle di conversione specifiche per tipo di file (x esempio la tabella di conversione per i file ePUB, con questa opzione attiva, applica, all'apertura del file, in automatico la tabella contenuta nel file "ePUB.tab" se presente).
+- Svariati Fix e miglioramenti all'IA e all'UI.
+- Modifiche minori.
+
+v. 1.58.1
+
+- Introdotta la possibilità di mettere in pausa la creazione di un audiolibro.
+- Modifiche e Fix minori.
+
+v. 1.58
+
+- Fixato un bug importante che impediva la corretta creazione di audiolibri oltre una certa grandezza.
+- Ora, visto che alcuni utenti facevano confusione tra le funzioni, a meno che non sia attivata la modalità avanzata, durante la riproduzione del testo vengono disattivati i pulsanti del registratore sonoro e viceversa.
+- Aggiunte e Fix minori.
+
+v. 1.57.9
+
+- Supporto dei file in formato "xhtml".
+- Supporto dei file nel noto formato per audio-libri "EPub" (sperimentale).
+- Aggiunta un'opzione per mantenere quanto più possibile il formato fisico originario dei file PDF.
+- Ora i tasti "Speak From Previous Line" e "Speak From Next Line" non si limitano a riprodurre la linea in questione, ma proseguono con le successive, ciò è molto utile, perchè consente di ottenere una funzione analoga all'avanti/indietro veloce dei Media Players.
+- Aggiunte due nuove tabelle di conversione, una serve per eliminare data e orario dalle conversazioni Skype in modo da poterle riprodurre con DSpeech creando un dialogo tra i protagonisti della chat, l'altra invece serve per fixare i difetti nelle lettere accentate che in taluni casi si manifestano all'apertura di un file Pdf o EPub.
+- Aggiunte e Fix minori.
+
+v. 1.57.8
+
+- Fixati alcuni piccoli bug introdotti con le ultime versioni.
+- Ora alcune iconcine sono cliccabili ed è quindi possibile impostarne le relative opzioni.
+- Aggiunta la funzione "Exit without save settings" per terminare senza salvare i settaggi (utile quando si sperimenta).
+- Migliorato il sistema dei menu e il posizionamento delle iconcine.
+
+v. 1.57.7
+
+- Aggiunto un LED che indica se il formato audio selezionato è il migliore per la voce selezionata.
+- Aggiunte alcune iconcine che indicano l'attivazione di determinate opzioni (ad esempio gli HotKeys).
+- Inserita un'opzione per visualizzare le informazioni complete sulla voce selezionata.
+- Ora la voce di menu "Close" cancella dai documenti recenti il file in questione e ne rimuove il segnalibro.
+- Al contrario la voce di menu "New" tiene memoria del documento appena chiuso.
+- Modificate e rese più razionali svariate voci di menu.
+- Dando seguito a molteplici richieste, viene ripristinata l'icona originale.
+- Fix vari.
+
+v. 1.57.6
+
+- Aggiunta una funzione che permette di selezionare in automatico la voce più bella tra quelle disponibili.
+- Introdotta una funzione che permette di selezionare il formato audio migliore per la voce attualmente in uso.
+- Migliorata la gestione dei Path, ora DSpeech si ricorda con esattezza la posizione degli ultimi file aperti e salvati.
+- Inserita la possibilità di forzare le regole grammaticali di una data lingua per voci di lingue differenti che supportano questa funzione (ad esempio le Loquendo).
+- Cambiata l'icona.
+- Fix vari.
+
+v. 1.57.5
+
+- Introdotta una funzione che permette di salvare in wav, mp3, etc il testo selezionato.
+- Ora il settaggio del pulsante "Get ClipBoard" viene memorizzato alla chiusura.
+- Aggiunta la possibilità di far funzionare il ClipBoard in modalità APPEND.
+- Migliorata e velocizzata la funzione che permette di catturare il contenuto del Clipboard in automatico.
+- Ora DSpeech funziona anche con risoluzioni inferiori alla nominale (1024x768), anche se con una resa estetica minore. Idem per quel che riguarda le impostazioni delle dimensioni dei caratteri (DPI).
+- Inserito un Easter Egg, ora anche DSpeech ne ha uno: Scrivere "Dimio" e provare a riprodurlo (di solito non si rivelano gli Easter Egg, ma tanto so per certo che nessuno leggerà fino a qui).
+- Soliti Fix (corretto, tra gli altri il bug che impediva il riavvio automatico dopo il cambio di linguaggio dell'interfaccia).
+
+v. 1.57.4
+
+- Introdotta la possibilità di introdurre una pausa di durata variabile tra la pronuncia di una linea e della successiva.
+- Aggiunta la possibilità di personalizzare, durante creazione di audiolibri multi-volume, i nomi dei singoli volumi, è ora possibile specificare il titolo mettendolo di seguito alla KeyWord "Break", se non si specifica niente il titolo verrà estrapolato dal testo.
+- Nella finestra "Replace" aggiunta la possibilità di ascoltare in anteprima la nuova parola o frase che si va a sostituire.
+- Ora, al termine di una serie di sostituzioni, viene indicato il numero delle occorrenze del termine sostituite.
+- Aggiunta la funzione Trova Tutto che consente di sapere quante volte ricorre un dato termine nel testo.
+- Svariati ritocchi e Fix (corretto, tra gli altri, il bug, introdotto a quanto sembra con la versione 1.57, che impediva di modificare il Pitch).
+
+v. 1.57.3
+
+- Fixata la gestione delle istanze multiple, non si possono avere più istanze aperte contemporaneamente (è un limite dell'interfaccia SAPI), ma l'apertura o chiusura delle stesse è stata semplificata e resa razionale.
+- Piccoli Fix e ritocchi.
+
+v. 1.57.2
+
+- Semplificata e migliorata la selezione delle opzioni (ora le opzioni di accessibilità e le modifiche alla Shell sono riunite in un'unica schermata).
+- Migliorata la gestione automatica della priorità; ora, in attesa di ordini, la priorità rimane normale, durante la riproduzione si alza e si abbassa durante le conversioni e i salvataggi.
+- Fix e miglioramenti vari.
+
+v. 1.57.1
+
+- Aggiunte le voci di  menu "Revert", per ripristinare come in origine un testo che è stato modificatoe, e "Close".
+- Svariati Fix e piccoli ritocchi all'UI.
+
+v. 1.57
+
+- Aggiunta la feature dei documenti recenti.
+- Cambiato il funzionamento dei pulsanti principali che è diventato più pratico e razionale, ora "Speak" inizia a leggere dal punto esatto in cui si trova il cursore, sono stati inoltre aggiunti "Speak From Current Line" e "Speak From Start".
+- Introdotti due nuovi pulsanti che consentono di pronunciare, una alla volta, la parola seguente o precedente, essi sono richiamabili tramite appositi HotKeys, ma non fanno parte del ciclo dei TAB.
+- Aggiunto il supporto ai Telecomandi multimediali.
+- Inserito il nuovo TAG "\Lang=xx" che consente di far pronunciare il testo con le regole grammaticali della lingua specificata, è quindi possibile, ad esempio, far leggere un testo italiano ad una voce spagnola. Il risultato sarà che, pur mantenendo l'accento spagnolo, la voce parlerà in italiano. Va comunque tenuto presente che non funziona con tutte le voci.
+- Introdotti nuovi HotKeys, per la registrazione, riproduzione e salvataggio audio.
+- Cliccando sul personaggio compare un fumetto che spiega alcune caratteristiche del software.
+- Eliminata l'opzione per far girare il software in modalità Idle, ora la priorità si abbassa automaticamente se la finestra viene minimizzata.
+- Ora le opzioni "AutoBookmarks" e "AutoLoad last file as Startup" sono indipendenti l'una dall'altra.
+- Cambiate le impostazioni di default di varie opzioni.
+- Numerosi Fix e miglioramenti vari.
+
+v. 1.56.5
+
+- Introdotto un sistema di criptazione per l'history per cui, leggendo il file INI, non è possibile risalire ai file che sono stati aperti durante il funzionamento di DSpeech.
+- Minimi fix e miglioramenti vari.
+
+v. 1.56.4
+
+- Fixato un bug che impediva la corretta applicazione delle tabelle di conversione.
+
+v. 1.56.3
+
+- Fixato un bug che rendeva impossibile salvare dei file audio con nomi più corti di tre caratteri.
+- Migliorata la disposizione dei menu e rese più comprensibili alcune voci.
+- Ora è possibile aprire/convertire anche delle pagine web direttamente da linea di comando.
+- Sostituito il segnale audio di fine conversione generato dallo speaker interno con un segnale audio generato dagli altoparlanti di sistema. Questo è stato necessario visto che lo speaker interno nei SO a 64 bit è stato disabilitato e non funziona più.
+- Fix e Upgrade minori.
+
+v. 1.56.2
+
+- Resi più razionali i menu e le opzioni per la creazione degli audiolibri.
+- Migliorata la funzione per rimuovere le andate a capo errate/inutili.
+- Fix minori.
+
+v. 1.56.1
+
+- Aggiunta la possibilità di salvare nel formato WMA.
+- Fixato un bug che impediva la corretta selezione della periferica di input per l'ASR.
+- Fixato il bug dei Bookmarks che li rendeva inutilizzabili con determinate modalità di apertura file.
+- Miglioramenti nella disposizione delle voci di menu.
+
+v. 1.56
+
+- Fixato un difetto nella conversione Ogg Vorbis.
+- Aggiunta la possibilità di salvare nel formato Mp4 AAC.
+- Incorporato il Plug-In per la lettura dei PDF.
+- Fix minori.
+
+v. 1.55.4
+
+- Inserita l'opzione "Enable Hotkeys" che permette di controllare DSpeech tramite tastiera anche quando non si trova in primo piano.
+
+v. 1.55.3
+
+- Fixato il malfunzionamento dell'opzione "configurazione indipendente delle voci" (introdotto probabilmente con la versione 1.55.2).
+
+v. 1.55.2
+
+- Aggiunta l'opzione da linea di comando /Speak che consente di far pronunciare direttamente una breve frase al PC.
+- Ora l'opzione da linea di comando /Hidden consente di far lavorare DSpeech in completo background.
+- Aggiunta l'opzione /HiddenFix da utilizzarsi al posto di /Hidden nel caso compaiano problemi con i Tag espressivi delle voci Loquendo.
+- Fix minori.
+
+v. 1.55.1
+
+- Fixato un bug che provocava un crash del programma aprendo pagine web fuori standard.
+- Altri fix minori.
+
+v. 1.55
+
+- Aggiunta la possibilità di produrre file audio compressi nel formato Ogg Vorbis (di dimensioni inferiori e di qualità superiore all'mp3).
+- Ora DSpeech è in grado di memorizzare e ripristinare la posizione del cursore per gli ultimi file aperti nelle successive aperture (funzione Auto Bookmarks).
+- Aggiunta la possibilità di applicare al volo una tabella di conversione specifica.
+- Migliorata ed estesa la tabella di conversione caratteri Dos-Windows (tnx ad Alessandro Pannocchi).
+- Aggiunta la richiesta di conferma alla chiusura del programma se il testo è stato modificato.
+
+v. 1.54
+
+- Ora è possibile aprire e riprodurre i link Internet.
+- I link internet aperti possono essere memorizzati.
+- DSpeech ora supporta i Feed RSS (sperimentale) ed è possibile impostare l'aggiornamento automatico degli stessi ogni 5 minuti (il nuovo Feed verrà riprodotto solo se aggiornato).
+- Fix minori.
+
+v. 1.53
+
+- Aumentata del 30% la velocità delle conversioni in mp3.
+- Inserito un timer per cronometrare il tempo impiegato nelle conversioni.
+- Fix minori.
+
+v. 1.52
+
+- Aggiunta la possibilità di specificare se i TAG XML devono avere validità per tutto il testo seguente o solo per la linea corrente (default).
+- Aggiunta la KeyWord "PLAYOVER" e "ENDPLAYOVER" che consentono di inserire un sottofondo musicale (per ora non funziona con i salvataggi).
+- Ora la Keyword "WAIT" funziona indistintamente con tutte le voci anche nei salvataggi in wav/mp3.
+- Ora, nella creazione di audiolibri, è possibile disattivare completamente la lettura del titolo e del numero del volume.
+- Fix minori.
+
+v. 1.51
+
+- Aggiunto il supporto ai file RTF.
+- Aggiunto il supporto ai file HTM e HTML.
+- Aggiunto il supporto ai file PDF (Richiede che sia installato il "DSpeech PDF Plug-In").
+- Aggiunto il supporto ai file DOC di MS Word (Richiede che Word sia installato).
+
+v. 1.50
+
+- Aggiunta la possibilità di effettuare delle conversioni personalizzate tra formati testo diversi ad esempio dal formato DOS al formato Windows.
+- Velocizzata di molto l'opzione per rimuovere i ritorni a capo inopportuni.
+- Fixati alcuni bug minori.
+- Ritocchi all'UI.
+
+v. 1.49
+
+- Inserita una funzione di riconoscimento vocale che consente di dettare del testo al computer o anche di dialogare con l'intelligenza artificiale in tempo reale (purtroppo l'IA è italiana mentre, per ora, l'engine di ASR della Microsoft è inglese, per cui, o si usano prodotti di terze parti o si sta freschi).
+
+v. 1.48
+
+- Aggiunta la possibilità di registrare l'audio dal microfono ed inserire il risultato all'interno del dialogo, in questo modo è possibile creare dei mix tra voci reali e sintetiche.
+- Aggiunta una funzione che consente di chattare in tempo reale con un'apparente forma di IA (intelligenza artificiale).
+
+v. 1.47
+
+- Aumentato il supporto alle voci SAPI4, ora gran parte delle opzioni avanzate prima disponibili solo per le voci SAPI5, come il sistema di creazione di dialoghi o le funzioni per la creazione di audiolibri, ora sono disponibili anche questo tipo di voci.
+- Aggiunta un'opzione che permette di utilizzare una voce diversa da quella in uso per i dialoghi contenuti tra virgolette.
+- Aggiunta un'opzione che consente di specificare se il titolo di un volume splittato deve avere la forma: "Titolo e Numero" oppure: "Numero e Titolo".
+- Aggiunta la possibilità di integrare DSpeech nel menu contestuale di Explorer.
+- Fixato un bug che, in testi lunghi, causava l'errato posizionamento dell'inizio lettura all'interno del brano.
+- Altri Fix minori.
+
+v. 1.46
+
+- Aggiunto il supporto per la traslazione multilingua dell'interfaccia.
+- Aggiunta la possibilità di integrarsi nel menu contestuale di Windows.
+- Migliorato il supporto alle voci SAPI4.
+- Aggiunta la possibilità di rimuovere le andate a capo non giustificate dalla punteggiatura automaticamente prima di una conversione (serve a rendere fluida la lettura dei documenti scansionati).
+- Aggiunta la "Verbose Mode" che consente di avere un riscontro audio ogni volta che si varia il volume, la velocità o il pitch tramite tastiera.
+- Migliorata la compatibilità e la stabilità del programma.
+- Altri miglioramenti e Fix minori.
+
+v. 1.45
+
+- Aggiunto il supporto (limitato) alle voci SAPI4.
+- Fixati alcuni bug nella conversione in mp3 con splittaggio in più file.
+- Ora i Custom TAGs possono essere suddivisi in sottomenu.
+- Altri fix minori.
+
+v. 1.44
+
+- Eliminato completamente lo stacco tra una linea e l'altra durante la riproduzione.
+- Ora, nei montaggi, è possibile utilizzare anche i file mp3 oltre ai file wav.
+- Fixati alcuni problemi che si presentavano con la funzione Word Wrap attivata.
+- Aggiunta la possibilità di specificare il Font e le dimensioni dello stesso.
+
+v. 1.43
+
+- Aggiunta l'opzione File Append per aggiungere un file in coda a quello attualmente aperto, tra i due verrà inserita la KeyWord BREAK.
+- Aggiunta la possibilità di far girare il programma con priorità Idle.
+- Nel file "CustomTAG.TXT", è ora possibile inserire dei TAG personalizzati che compariranno poi nel menu contestuale (ad esempio i tag espressivi di Loquendo).
+- Ora la funzione Replace permette di inserire anche i ritorni a capo.
+- Ritocchi all'UI.
+- Ora, anche durante la conversione mp3, la finestra rimane responsiva, ed è possibile premere il pulsante abort per interrompere il processo.
+- Migliorata la compatibilità con gli Screen Reader.
+- Aggiunti i pulsanti: Speak Previous Line, Speak Current Line e Speak Next Line per ottenere rispettivamente la lettura delle linee precedente, attuale e successiva rispetto alla posizione del cursore.
+- Aggiunto il supporto ai TAG mp3, per aumentare la compatibilità con alcuni lettori mp3.
+- Introdotti diversi nuovi ShortCut da tastiera.
+- Restyling dell'interfaccia.
+- Aggiunta la funzione Word Wrap (sperimentale).
+- Corretti alcuni bug.
+
+v. 1.42
+
+- Aumentata di molto la velocità di conversione di un testo in wav o mp3.
+- Risolto il bug che creava distorsione audio con i tag espressivi di loquendo nei salvataggi in wav o mp3.
+- Aggiunta la possibilità di specificare il formato audio di output, utile se si vuole incorporare un file wav di bitrate noto nel prodotto finito.
+- Ora, per chi possiede più di una scheda audio, è possibile specificare dove deve essere reindirizzato l'output sonoro.
+- Aggiunta la possibilità di inserire una pausa di 300 millisecondi all'inizio e alla fine di ogni file audio creato (utile per aumentare la compatibilità con i lettori CD e mp3).
+- Aggiunta la possibilità di creare file multipli suddivisi per paragrafo. Ora, se si imposta l'opzione di suddivisione "Custom", nel salvataggio, verrà creato un nuovo file ogni volta che, nel testo, si incontra la KeyWord "REAK"q.
+- Ora, se si usa la suddivisione del file di output in più file, ognuno di essi inizia dicendo il suo nome e il numero del file.
+- Sempre se si utilizza la suddivisione in volumi, essi vengono salvati tutti all'interno di una cartella con il nome del file che si è scelto.
+- E' ora possibile impostare il PC in modo tale che, al termine di una conversione in wav o mp3, esegua lo shutdown del sistema.
+- Aggiunta la funzione sostituisci (replace) alle funzioni di editing.
+- Migliorata la compatibilità con gli Screen Reader.
+- Aggiunta un'opzione per rimuovere tutte le andate a capo inutili (utile per migliorare la lettura di testi formattati male).
+- Restyling dell'interfaccia.
+- Altre cosette minori.
+
+v. 1.41
+
+- Resi compatibili con gli Screen Reader i controlli del Volume, Velocità e Pitch.
+- Aggiunta la possibilità di creare audio-libri splittati in file di tot minuti ciascuno.
+- Aggiunto il comando FIND nel menu edit.
+- Introdotta la possibilità di specificare il formato di compressione mp3 in modo da privilegiare la qualità, le dimensioni o in maniera da bilanciare le cose.
+- Migliorata la funzione di Tracking.
+- Fix minori.
+
+v. 1.40
+
+- E chi si ricorda più :-)

@@ -1,0 +1,287 @@
+DSpeech (Dimio'dan)
+~~~~~~~~~~~~~~~~~~~
+
+Güncel sürümüne aþaðýdaki baðlantýdan ulaþabilirsiz :
+
+ "http://dimio.altervista.org/"
+
+TARÝF:
+~~~~~~~~~~~~
+
+DSpeech TTS (Metinden Sese) çeviri yapan ve ayný zaman da ASR (Otomatik Konuþma Tanýma) entegre edilmiþ
+bir programdýr.
+2. Hýzlý bir þekilde farklý sesleri seçebilirsiniz ve bu sesler arasýnda karþýlýklý konuþmalar yaratabilirsiniz.
+3. Ses tanýma sistemi sadece bir dil senaryosundan ibarettir, Müþteri ile karþýlýklý interaktif konuþmalar tasarlamanýzý saðlar.
+4. Sesi baðýmsýz olarak þekillendirmenize imkan verir.
+5. Özel etiket (TAG), size dinamik olarak ses özelliklerini deðiþtirme imkaný verir.(hýz,ses ayarý ve frekans).
+6. Pano içeriðinin otomatik kopyalar ve istenilen formata çevirir.
+7. SAPI 4 and 5 ile uyumlu tüm sesleri destekler.
+
+Yardýmcý karakteristikler aþaðýdakilerdir:
+
+1. Son seçilmiþ ayarlar ile program baþlar.
+2. Komut satýrýný destekler ve grafik arabirimi kullanmadan ses kitaplarý oluþturulabilir.
+3. Ses çýkýþýnýn biçimi seçilebilir .
+4. Girilen özel etiketler ile metinlerden wav veya mp3 dosyalarý oluþturulabilir. 
+   Bu özellik ile okuma sýrasýnda özel efektler öksürme,gülme,müzik vb.eklenebilir.
+5. Mp3s kaydedildiðinde, istenilen kalite,boyut, seçilebilir. i
+6. Metni mp3 veya wav yaparken dosyalarý 5, 10 or 15 dakikalýk parçalara ayýrabilirsiniz.
+7. "CustomTAG.TXT",dosyasýna kiþisel etiketler(TAGS) girilebilir ve girilenler sað týk menüsünde görülür. 
+   (Örneðin özel Loquendo TAG'larý).
+
+
+
+METÝNDEN SESE:
+~~~~~~~~~~~~~~~
+Sað Týk Menüsü ile hangi sesin girilen metni konuþacaðýný seçmek mümkündür.
+Özel etiketler TAGS ekleyerek sesle ilgili ayarlarda yapýlabilir.(hýz, ses ayarý,frekans vb).
+
+SES SEÇENEKLERÝ:
+~~~~~~~~~~~~~~
+Ses oluþtururken bit oraný önemlidir ve ses kartýnýz önemlidir.Her zaman seslerin kullandýðý ayný bit oranlarýný
+kullanýnýz.Aksi durumda ses kalitesinde kayýplar veya kötü etkiler olabilir. 
+Genelde, sentetik seslerin çoðu: "16 Khz 16 Mono Bit",kullanýr Microsoft sesleri ise 
+"22 Khz 16 Mono Bit.kullanýr."Bu ayarlar Wav veya Mp3 çevirileri için önemlidir.
+
+
+WAV VEYA MP3 ÇEVÝRME:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DSpeech metin dosyalarýný Wav veya Mp3 dönþtürebilirsiniz.Bir Mp3 seçildiðinde standart sýkýþtýrma
+karakteristikleri uygulanarak dengeli bir ses ve boyutta oluþturulur.
+
+
+METNÝ DÜZENLEME
+~~~~~~~~~~~~~~~~~~~~
+
+Standart düzenleme komutlarýnýn yaný sýra (Bul,Deðiþtir,Kes vb.) özel bir fonksiyon olarak ,
+"Gereksiz Satýrbaþlarýný Çýkar." eklenmiþtir.Metinde akýcýlýk saðlamak için gereksiz satýrbaþý
+boþluklarýný silerek metni akýcý hale getirir.Ses kalitesi ve akýcýlýðý saðlanmýþ olur.
+
+
+SES KÜTÜPHANESÝ TASARIMI:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Ses kütüphanesi oluþturmak için gerekli seçenekler sahip bir programdýr, özellikle,bir metin dosyasýný birkaç dakikada 
+iki üç parça ses dosyasýna çevirmek mümkündür.Ayný zamanda bu yardýmcý kýlavuzu inceleyerek metin dosyalarý ile ilgili 
+bilgi alabilirsiniz.Bu durumda, deðiþtirmek istediðiniz metin dosyasý için #BREAK komutu girilir.
+Ses menüsündeki "Ekle" ile dosyalarý birbirleriyle birleþtirerek yeni metin dosyalarý oluþturmamýzý mümkün kýlar.
+Program metinler arasýna otomatik olarak#automatically BREAK yerleþtirerek metinleri ayýrýr.Ayný zamanda 
+metinlerin baþlarýna #BREAK yerleþtirerek CD okuyucular veya eski mp3 ile uyum saðlar.
+
+
+
+SES TANIMA:
+~~~~~~~~~~~~~~~~~~
+
+DSpeech ses tanýmayý aþaðýdaki örnekteki gibi ,basit ve birleþik script ile yapar,böylece yaratýcý ve interaktif 
+dialoglar oluþturabilirsiniz:
+CONSUMER: "Computer"
+PC: "Ready computer, who are? "
+CONSUMER: "Dimio"
+PC: "Welcome then"
+Etc.
+
+Sistem script örneði BASIC'e çok benzer, þimdilik aþaðýdaki komutlar tanýnmaktadýr:
+
+
+#VOICE NomeVoce
+#I GIVE
+#EXIT DO
+#LOOP
+#RECOGNIZE Parola1, [Parola2], [OTHER_WORDS]...
+#RECOGNIZE_WITH_TIMEOUT Secondi, Parola1, [Parola2], [OTHER_WORDS]...
+#IF RECOGNIZED Parola1, [Parola2], [OTHER_WORDS]...
+#IF TIMEOUT
+#END IF
+#CALL NomeSub
+#Sub NomeSub
+#END SUB
+#RANDOM
+#HOUSES
+#END RANDOM
+#EXECUTE PathFileOProgramma
+#OPEN FileToSpeech.txt
+#STOP
+#BREAK
+#PLAY FileName.wav
+#WAIT nSecondi
+#CLOSE
+
+
+Sað týk menüsünde tüm anahtar kelimeleri örnekleriyle bulabilirsiniz.
+Yazýlým detaylarý burada açýklanmayacaktýr ancak siz örnekleri inceleyerek konuyu algýlayabilirsiniz.
+Ses tanýma ile ilgili Script örneði aþaðýda olduðu gibidir:
+
+
+#VOICE Marco
+I am Angelus the computer of Dimitri. You who are?
+#DO
+ #RECOGNIZE Dimitri, Gloria, OTHER_WORDS
+ #IF RECOGNIZED Dimitri
+  Angelus waiting for instructions.
+  #EXIT DO
+ #END IF 
+ #IF RECOGNIZED Gloria
+  You have mistaken computer, yours is that of side.
+  #EXIT DO
+ #END IF 
+ #IF RECOGNIZED OTHER_WORDS
+  #RANDOM
+  #CASE
+   Can you repeat please? I have not understood your name.
+  #CASE
+   What have you said? Can you Repeat?
+  #CASE
+   I have not understood what you have said, perhaps, simply, your name I don't know him/it.
+  #END RANDOM
+ #END IF 
+#LOOP
+
+
+Ne yazýk ki ses tanýma sistemi Ýngilizce sesleri tanýmaktadýr.Bu yüzden kelimelerin tanýnmasý  için 
+telaffuzunuzu Ýngilizce telaffuz þeklinde yapmak gerekiyor. 
+Örnek olarak, Bilgisayarýn "Russia"sözcüðünü anlamasý için "Rassya" þeklinde yazmak gerekiyor.
+
+
+
+KISAYOLLAR:
+~~~~~~~~~~
+
+Klavye kýsayollarý aþaðýda olduðu gibidir:
+
+F1 = Düzenleme kutusuna Git.
+F4 = Duraklat/Baþlat.
+F5 = Konuþ/Dur.
+F6 veya ALT+UP = Önceki satýrý Konuþ.
+F7 veya ALT+LEFT = Geçerli satýrý Konuþ.
+F8 veya ALT+DOWN = Sonraki satýrý Konuþ.
+F9 veya ALT+RIGHT = Ýþaretleyerek Konuþ.
+F11 = Önceki sese geç.
+F12 = Sonraki sese geç.
+Shift+F11 = Ýlk sese geç.
+Shift+F12 = Son sese geç.
+Escape = Dur.
+ALT+1 = Sesi azalt.
+ALT+2 = Sesi arttýr.
+ALT+3 = Hýzý azalt.
+ALT+4 = Hýzý arttýr.
+ALT+5 = Tonu azalt.
+ALT+6 = Tonu arttýr.
+
+
+
+KOMUT SATIRI:
+~~~~~~~~~~~~~
+
+Komut satýrýný kullanarak otomatik olarak istenen eylem yapýlabilir.
+Script kullanarak otomatik iþlem yapýlabilir.
+
+
+SYNTAX:
+
+DSPEECH.ExE [/Play] [/Speak] [/Wav] [/Mp3] [/Ogg] [/Hidden|/HiddenFix] [FileToSpeech.txt]
+
+
+KOMUT SATIRI ÖRNEKLERÝ:
+
+- Dosyayý açmak için:
+
+DSpeech.exe kaynak.txt
+
+- Dosya ses üretimi için: 
+
+DSpeech.exe /Play kaynak.txt
+
+- Kýsa bir satýr konuþmasý için: 
+
+DSpeech.exe /Konuþ Merhaba!
+
+- Bir metin dosyasýný mp3'e çevirmek için: 
+
+DSpeech.exe /mp3 kaynak.txt [hedef.mp3]
+
+- Bir metin dosyasýný ogg'e çevirmek için: 
+
+DSpeech.exe /ogg kaynak.txt [hedef.ogg]
+
+- Bir metin dosyasýný wav'a çevirmek için:
+
+DSpeech.exe /wav kaynak.txt [hedef.wav]
+
+
+
+SÝSTEM KONFÝGÜRASYONU:
+~~~~~~~~~~~~~~~~~~~~
+
+Windows NT/2000 sesleri yüklemek için önce MS-SAPI5.1 paketini Microsoft'un sitesinden veya
+aþaðýdaki linklerden indirip kurmanýz gerekmektedir: 
+
+http://aldostools.mysite4now.com/sapi51.msi
+http://www.arlington.com.au/sapi51.msi
+
+Windows NT/2000 sistemine ses tanýma yazýlýmýný yüklemek için ya MS tüm paketini 
+SAPI 5.1 SDKs (60MB) ya da sadece ses motorunu(30MB) bu link'ten yüklemeniz gerekir: 
+
+http://clans.gameclubcentral.com/shoot/SR.zip
+
+Windows XP/2003/VISTA/7/8 sistemlerinde ses eklemenize gerek yoktur zaten sesler iþletim 
+sisteminin içinde mevcuttur.
+
+DSpeech en az 1024x768 çözünürlükte çalýþýr.
+DSpeech  Windows 9x'lu sistemlerde çalýþmaz.
+
+
+
+SESLER:
+~~~~~~~~~~~
+
+DSpeech, iþletim sisteminde yüklü sesleri kullanýr,Windows XP'de sadece erkek sesi 
+Microsoft SAM (Ýngilizce), iken, eðer Windows NT/2000 MS-SAPI5.1 yüklüyse , yine Ýngilizce olarak
+Mike and Mary) erkek ve kadýn sesleri olur..
+XP müþterileri kadýn sesini buradan indirebilir:
+
+http://download.microsoft.com/download/speechSDK/SDK/5.1/WXP/EN-US/Sp5TTIntXP.exe
+
+En son sürümler tabiki SAM'den daha iyi ancak kaliteleri üçüncü parti yazýlýmlarla
+mukayese edildiðinde bunlarýn çok daha iyi olduðu görülmektedir. Ne yazýk ki bu yazýlýmlarda 
+ücretli olup yasal yoldan ücretsiz edinmeniz mümkün görünmemektedir.Bu yazýlýmlar þunlardýr:
+
+Acapela (Temiz ve akýllý sesler ancak maksimum doðallýðý yakalayamamakta).
+Cepstral (Çok pahalý sesler ile karþýlaþtýrýldýðýnda kalitesi çok iyi deðil, fakat idare eder).
+Loquendo (Belki de en iyisi doðallýk ve ifadeler açýsýndan,fiyatý çok pahalý).
+RealSpeak (Çok iyi).
+VoiceWare (Fena deðil ancak, türkçe yok).
+
+
+
+NOTLAR:
+~~~~~~
+
+Bir mp3 dosyasý metin dosyasýna eklendiðinde, dosya büyüklüðüne baðlý olarak, 
+sesin tekrar üretilmesi için bir zamana ihtiyaç duyar,bu normal olup and bir hata oluþturmaz,
+her durumda ,sonuç olarak  bekleme biter wav veya mp3 dosyalarý oluþmuþ olur.
+
+mp3 sýkýþtýrmalarý için bu codec kullanýldý. Blades (www.mp3dev.org),  "Lame.exe" paketin içinde görülmektedir.
+
+
+
+YAZILIMCI:
+~~~~~~~
+
+Dimitrios Coutsoumbas (Dimio)
+SKYPE  : katafratto
+ICQ    : 145633952
+E-MAIL : cyberdimio@gmail.com
+HOME   : http://dimio.altervista.org/
+
+
+
+DENEME SÜRÜMÜNÜ TEST EDENLER:
+~~~~~~~~~~~~~
+
+Talksina (talksina@gmail.com)
+
+ÇEVÝRÝ (TRANSLATED BY):
+^^^^^^^^^^^^^^^^^^^^^^
+Selim Elitaþ
+E-MAIL:selimelitas@mynet.com

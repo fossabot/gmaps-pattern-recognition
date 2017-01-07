@@ -1,0 +1,273 @@
+DSpeech (by Dimio)
+~~~~~~~~~~~~~~~~~~
+
+The updated version is found to the following Link:
+
+Home: "http://dimio.altervista.org/"
+
+
+
+DESCRIPTION:
+~~~~~~~~~~~~
+
+DSpeech is a program of TTS (Text To Speech) with functionality of ASR (Automatic Speech Recognition) integrated. And' that is in degree to read to tall voice the written text and to choose the sentences to pronounce according to the vocal answers of the consumer. And' projected specifically to furnish in rapid way and directed the functions of greater practical utility that are required to the programs of this type, maintaining to the meantime to the least one the invasività and the consumption of resources (it is not installed, it doesn't integrate him in the system, it is light, it sets out in an instant and he/she doesn't write anything in the register).
+
+The principal characteristics of DSpeech are:
+
+1. It allows to save the output in the form of a file Wav or Mp3.
+2. It allows to quickly select different bawls and to combine her among them to create dialogues among more bawls.
+3. Entire a system of Vocal Recognition that, through a simple language of script, it allows to create interactive dialogues with the consumer.
+4. It allows to shape the voices in independent way.
+5. Through special TAG, allows to dynamically vary the characteristics of the voices during the reproduction (speed, volume and frequency), to insert breaks, to emphasize terms or to make the spelling.
+6. It allows to capture and to automatically reproduce the content of the ClipBoard.
+7. It supports all vocal engines compatible with SAPI 4 and 5.
+
+Entire besides a series of secondary characteristics, among which:
+
+1. To the start, it allows to auto-load the last open file with relative position of reading.
+2. It supports the command line and you/he/she can be used then, without graphical user interface, for the creation of audio-books.
+3. It allows to specify the format of the audio output, this is able useful venir in very particular situations, when there is the necessity to operate with some files wav of defined characteristics.
+4. It allows to create some assemblages inserting, through a special KeyWord, of the fileses wav or mp3. This can be useful to introduce, during the reading, of the particular effects as a hit of cough, a laughter, or also of the you detach musical.
+5. When the mp3s are saved, it is possible to specify the quality of the same, in way to be privileged the dimensions or the quality of the result.
+6. And' now possible to convert some text in mp3 or wav dividing him/it in file from 5, 10 or 15 minutes each.
+7. In the file "CustomTAG.TXT", it is possible to insert some personalized TAG that will appear then in the contextual menu now (for instance the expressive tags of Loquendo).
+
+
+
+TEXT TO SPEECH:
+~~~~~~~~~~~~~~~
+
+Through the contextual menu (Right Click) it is possible to specify with what voice must be pronounces a date sentence, this it makes the creation of dialogues possible among different bawls.
+It is likewise possible to insert special TAG that allows to modify the characteristics of the voice while you/he/she is speaking (speed, volume, frequency etc).
+
+
+
+OPTIONS AUDIO:
+~~~~~~~~~~~~~~
+
+And' possible to specify the card audio in which to redirect the output and, above all, the bitrate of the voices that he is using. It always needs to try to use the same bitrate from the voices in use, in contrary case, losses of quality or the effect can you/they can be had (as if the voice spoke to a can).
+In general, the settaggio used by the most greater part of the synthetic voices is: "16 Khzes 16 Mono Bit", while the voices of Microsoft use "22 Khzes 16 Mono Bit."
+These settaggis are particularly important when a conversion effects him in file Wav or Mp3.
+
+
+
+CONVERSION IN FILE WAV OR MP3:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+And' possible to use DSpeech for the conversion of the text in a file Wav or Mp3. If the formed mp3 is chosen, the possibility is given to specify the characteristics of the compression, in fact it can be settata so that to privilege the dimensions, the quality audio of the produced file, or so that to get a balanced thing.
+
+
+
+EDITING DI THE TEXT:
+~~~~~~~~~~~~~~~~~~~~
+
+Besides the functions of standard editing (find, replace, cut etc.) a particular function is integrated, her "Remove Useless Return Carriage." It serves to eliminate all the present useless carriage return in the text that you/they could limit the fluidity of the reading from the artificial voices. In fact, often understands that a text, for reasons for pagination, contains a series of carriage return that you/they would negatively go to impattare to the quality of reading from the TTS.
+
+
+
+CREATION OF AUDIOLIBRI:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+A series of options they are supported for the creation of audiolibri, in particolar way, the possibility to divide the text in more file of tot minute each. And' also possible to use the manual subdivision of the text in files. In this case, it is necessary to insert the KeyWord #BREAK every time that is wanted to change file.
+Through the voice of menu "Append" it is possible to unite more fileses of text one behind the other.
+Between the one and the other one the KeyWord will be inserted #automatically BREAK so that to allow the subdivision of the text separate files.
+And' also possible to insert a break to the beginning of the text, so that to maintain the compatibility with the readers CD or older mp3.
+
+
+
+VOCAL RECOGNITION:
+~~~~~~~~~~~~~~~~~~
+
+DSpeech supports a system of vocal recognition that, united to a simple system of script, it makes him/it in degree to create interactive dialogues with the consumer of the type:
+CONSUMER: "Computer"
+PC: "Ready computer, who are? "
+CONSUMER: "Dimio"
+PC: "Welcome then"
+Etc.
+
+The system of script is very similar to the BASIC, for now the following KeyWordses are supported:
+
+
+#VOICE NomeVoce
+#I GIVE
+#EXIT DO
+#LOOP
+#RECOGNIZE Parola1, [Parola2], [OTHER_WORDS]...
+#RECOGNIZE_WITH_TIMEOUT Secondi, Parola1, [Parola2], [OTHER_WORDS]...
+#IF RECOGNIZED Parola1, [Parola2], [OTHER_WORDS]...
+#IF TIMEOUT
+#END IF
+#CALL NomeSub
+#Sub NomeSub
+#END SUB
+#RANDOM
+#HOUSES
+#END RANDOM
+#EXECUTE PathFileOProgramma
+#OPEN FileToSpeech.txt
+#STOP
+#BREAK
+#PLAY FileName.wav
+#WAIT nSecondi
+#CLOSE
+
+
+In the contextual menu (right-click) it is possible to find all these KEYWORDSs with relative Examples.
+I am not to explain the syntax considering that you/he/she can deduce her/it in more intuitive way from the examples themselves.
+In every case, an example of script for the vocal recognition could be the following:
+
+
+#VOICE Marco
+I am Angelus the computer of Dimitri. You who are?
+#DO
+ #RECOGNIZE Dimitri, Gloria, OTHER_WORDS
+ #IF RECOGNIZED Dimitri
+  Angelus waiting for instructions.
+  #EXIT DO
+ #END IF 
+ #IF RECOGNIZED Gloria
+  You have mistaken computer, yours is that of side.
+  #EXIT DO
+ #END IF 
+ #IF RECOGNIZED OTHER_WORDS
+  #RANDOM
+  #CASE
+   Can you repeat please? I have not understood your name.
+  #CASE
+   What have you said? Can you Repeat?
+  #CASE
+   I have not understood what you have said, perhaps, simply, your name I don't know him/it.
+  #END RANDOM
+ #END IF 
+#LOOP
+
+
+The system of recognition, founds unfortunately entirely for now him on the phonetics English, for which, to make to recognize some words, can be necessary to suit her for the pronunciation English. For instance, to make to recognize to the computer the word "Russia" it needs to write "Rassya."
+
+
+
+SHORTCUTS:
+~~~~~~~~~~
+
+All the functions of the interface solo in partnership to of the shortcuts of keyboard, the followings special keys are supported besides:
+
+  F1 = you Go to the box of editing
+  F4 = Pause/Resume
+  F5 = Speak/Stop
+  F6 or ALT + UP = Speak Previous Line
+  F7 or ALT + LEFT = Speak Current Line
+  F8 or ALT + DOWN = Speak Next Line
+  F9 or ALT + RIGHT = Speak From Cursor
+  F11 = it Passes to the preceding voice
+  F12 = it Passes to the following voice
+  ESC = Stop
+  ALT+1 = it Increases the volume
+  ALT+2 = it Decreases the volume
+  ALT+3 = it Increases the speed
+  ALT+4 = it Decreases the speed
+  ALT+5 = it Increases the pitch
+  ALT+6 = it Decreases the pitch
+
+
+
+COMMAND LINE:
+~~~~~~~~~~~~~
+
+It's possible to specify a file name to open and automatically reproduce. This allows to perform in automatic way a script.
+
+
+SYNTAX:
+
+DSPEECH.ExE [/Play] [/Speak] [/Wav] [/Mp3] [/Ogg] [/Hidden|/HiddenFix] [FileToSpeech.txt]
+
+
+COMMAND LINE SAMPLES:
+
+- To open a file:
+
+DSpeech.exe source.txt
+
+- To start a file reproduction: 
+
+DSpeech.exe /Play source.txt
+
+- To speak aloud a short sentence: 
+
+DSpeech.exe /Speak Hello!
+
+- To convert a text file to mp3: 
+
+DSpeech.exe /mp3 source.txt [destination.mp3]
+
+- To convert a text file to ogg: 
+
+DSpeech.exe /ogg source.txt [destination.ogg]
+
+- To convert a text file to wav: 
+
+DSpeech.exe /wav source.txt [destination.wav]
+
+
+
+SYSTEM CONFIGURATION:
+~~~~~~~~~~~~~~~~~~~~
+
+With Windows NT/2000, needs first to install the packet MS-SAPI5.1 scaricabile from the site Microsoft or also from one of the following links: 
+
+http://aldostools.mysite4now.com/sapi51.msi
+http://www.arlington.com.au/sapi51.msi
+
+With Windows NT/2000, if he/she is wanted to use the vocal recognition, it needs to also install the engine for the recognition; this can be done or unloading and installing from the site MS the whole packet SAPI 5.1 SDKs (60MB) that he/she understands him/it, or (recommended choice) unloading the alone engine (30MB) from this link: 
+
+http://clans.gameclubcentral.com/shoot/SR.zip
+
+Windows XP/2003/VISTA doesn't need two anybody considering that you/he/she has already included them.
+
+DSpeech asks for a resolution than at least 1024x768.
+DSpeech doesn't is not make a will on systems Windows 9x.
+
+
+
+THE VOICES:
+~~~~~~~~~~~
+
+DSpeech, uses the installed voices in the system, of default, on Windows XP there is only Microsoft SAM (in English besides), while, if MS-SAPI5.1 is installed on Windows NT/2000, disposition they will be had to other two bawls (Mike and Mary) also them in English.
+The consumers of XP can unload here her from:
+
+http://download.microsoft.com/download/speechSDK/SDK/5.1/WXP/EN-US/Sp5TTIntXP.exe
+
+These last, is surely best of SAM, but their quality is really scarce if compared with bawls of third parts (difference is abysmal), for which he recommends to unload of it and to install of it of the others. Unfortunately The best are to payment and, it is not even at times easy to give her for him in legal way. In every case, to the top of the category we find the voices of the manufacturing segentis:
+
+Acapela (clear and intelligible Bawls but not the maximum in terms of naturalness).
+Cepstral (they are those with the good relationship prezzo/prestazioni, the quality it is not to the same levels of the most expensive voices, but they are valid however).
+Loquendo (Very good, especially in terms of naturalness and expressiveness, they also cost so much).
+RealSpeak (Surely good).
+VoiceWare (Also these are not quite badly, but there are not Italian).
+Ivona (Probably the best).
+
+
+
+Notes:
+~~~~~~
+
+When a file mp3 is inserted in the text, kind if of big dimensions, a small break can be warned between the reproduction of the preceding line and the reproduction of the audio file, this is normal and it doesn't constitute a bug, in every case, when he goes to save the result in the form of file wav or mp3, the break it disappears completely.
+
+For the compression in mp3 the codec is used Blades (www.mp3dev.org), it corresponds to the file "Lame.exe" included in the packet.
+
+
+
+CODERS:
+~~~~~~~
+
+Dimitrios Coutsoumbas (Dimio)
+SKYPE  : katafratto
+ICQ    : 145633952
+E-MAIL : cyberdimio@gmail.com
+HOME   : http://dimio.altervista.org/
+
+
+
+BETA-TESTERS:
+~~~~~~~~~~~~~
+
+Talksina (talksina@gmail.com)

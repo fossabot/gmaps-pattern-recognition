@@ -1,0 +1,438 @@
+# depslib dependency file v1.0
+1445263445 source:d:\isen\m1\c\projet_bmp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1262593510 d:\isen\m1\c\projet_bmp\outilslib.h
+
+1247941574 d:\isen\m1\c\projet_bmp\bmplib.h
+	<stdbool.h>
+
+1445264984 d:\isen\m1\c\projet_bmp\imageio.h
+
+1247941572 source:d:\isen\m1\c\projet_bmp\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1445264585 source:d:\isen\m1\c\projet_bmp\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1262593760 source:d:\isen\m1\c\projet_bmp\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1445161081 d:\isen\m1\c\projet_bmp\transfopixel.h
+
+1247941572 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247941574 c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\bmplib.h
+	<stdbool.h>
+
+1262593510 c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\outilslib.h
+
+1262593760 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1445271168 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1445269964 c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\imageio.h
+
+1445265217 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1445161081 c:\users\colombies\desktop\m1\traitement d'image\td6 exo2\projet_bmp_vf1\projet_bmp\transfopixel.h
+
+1247937972 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\outilslib.h
+
+1446724521 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1446724552 c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\imageio.h
+
+1446810643 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1445157481 c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\transfopixel.h
+
+1262590160 source:c:\users\colombies\desktop\m1\traitement d'image\td6 exo3\projet_bmp\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1247937972 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\bmplib.h
+	<stdbool.h>
+
+1262589910 d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\outilslib.h
+
+1446724305 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1446724552 d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\imageio.h
+
+1445157481 d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\transfopixel.h
+
+1262590160 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1446723911 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\exercices\td6\version finale2\projet_bmp\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1247937972 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\outilslib.h
+
+1262590160 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1447108466 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1447108504 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp\imageio.h
+
+1247937972 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\outilslib.h
+
+1447257159 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1447257045 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\imageio.h
+
+1447257056 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447108546 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\transfopixel.h
+
+1262590160 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1247937972 source:j:\m1\traitement images\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 j:\m1\traitement images\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 j:\m1\traitement images\projet_bmp_google_maps\outilslib.h
+
+1447662800 source:j:\m1\traitement images\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447660922 j:\m1\traitement images\projet_bmp_google_maps\imageio.h
+
+1447660818 j:\m1\traitement images\projet_bmp_google_maps\transfopixel.h
+
+1262590160 source:j:\m1\traitement images\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1447662623 source:j:\m1\traitement images\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1247937972 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\outilslib.h
+
+1447682107 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1447660922 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\imageio.h
+
+1447682149 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447660818 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\transfopixel.h
+
+1262590160 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\perichon\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1247937972 source:c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\outilslib.h
+
+1447754247 source:c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1447753583 c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\imageio.h
+
+1262590160 source:c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1447765855 source:c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447660818 c:\users\clementguiol\documents\m1\vision industrielle\projet_bmp_google_maps\transfopixel.h
+
+1247937972 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\outilslib.h
+
+1449048755 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+	<time.h>
+
+1447753583 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\imageio.h
+
+1262590160 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1449048662 source:c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447660818 c:\users\colombies\desktop\m1\traitement d'image\traitement image projet google maps\guiol\projet_bmp_google_maps\transfopixel.h
+
+1247937972 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\outilslib.h
+
+1448984110 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447753583 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\imageio.h
+
+1447660818 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\transfopixel.h
+
+1262590160 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+
+1449040711 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v12\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+
+1247937972 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\bmplib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"BmpLib.h"
+	"OutilsLib.h"
+
+1247937974 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\bmplib.h
+	<stdbool.h>
+
+1262589910 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\outilslib.h
+
+1449048755 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\imageio.c
+	<stdio.h>
+	<stdlib.h>
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	<math.h>
+	<time.h>
+
+1447753583 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\imageio.h
+
+1449049407 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"string.h"
+	"outilslib.h"
+	"bmplib.h"
+	"imageIO.h"
+	"transfoPixel.h"
+
+1447660818 d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\transfopixel.h
+
+1262590160 source:d:\isen\m1\semestre1\tronc_commun\vision industrielle\projet\v20\projet_bmp_google_maps\outilslib.c
+	"OutilsLib.h"
+	<stdbool.h>
+

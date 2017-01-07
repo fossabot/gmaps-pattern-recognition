@@ -1,0 +1,605 @@
+DSpeech (by Dimio)
+~~~~~~~~~~~~~~~~~~
+
+La versione aggiornata si trova al seguente Link:
+
+Home: "http://dimio.altervista.org/"
+
+
+
+DESCRIZIONE:
+~~~~~~~~~~~~
+
+DSpeech è un programma di TTS (Text To Speech) con funzionalità di ASR (Automatic Speech Recognition) integrate. E' cioè in grado di leggere ad alta voce il testo scritto e di scegliere le frasi da pronunciare a seconda delle risposte vocali dell'utente. E' progettato specificamente per fornire in maniera rapida e diretta le funzioni di maggiore utilità pratica che si richiedono ai programmi di questo tipo, mantenendo al contempo al minimo l'invasività e il consumo di risorse (non si installa, non si integra nel sistema, è leggerissimo, si avvia in un attimo e non scrive niente nel registro).
+
+Le principali caratteristiche di DSpeech sono:
+
+- Permette di salvare l'output sotto forma di un file Wav o Mp3.
+- Permette di selezionare rapidamente voci diverse e combinarle tra loro per creare dialoghi fra più voci.
+- Integra un sistema di RICONOSCIMENTO VOCALE che, oltre a poter essere utilizzato come tale, tramite un semplice linguaggio di script, consente di creare dialoghi interattivi con l'utente.
+- Permette di configurare le voci in maniera indipendente.
+- Tramite appositi TAG, consente di variare dinamicamente le caratteristiche delle voci durante la riproduzione (velocità, volume e frequenza), inserire pause, enfatizzare termini o fare lo spelling.
+- Permette di catturare e riprodurre automaticamente il contenuto del ClipBoard.
+- Supporta tutti gli engine vocali compatibili con SAPI 4 e 5.
+- Consente di registrare dal microfono ed inserire il risultato all'interno del dialogo in modo tale da creare un mix di voci reali e sintetiche.
+- Supporta delle personalità virtuali (di default c'è solo Selena in italiano) che consentono al computer di rispondere con delle risposte sensate (più o meno) alle domande dell'utente.
+- Può essere usato per doppiare i film, è cioè in grado di leggere i sottotitoli di un film mentre lo si visiona.
+
+Integra inoltre una serie di caratteristiche secondarie, tra cui:
+
+- Supporta la linea di comando e può quindi essere utilizzato, senza interfaccia grafica, per la creazione di audio-libri.
+- Consente di specificare il formato dell'output audio, questo può venir utile in situazioni molto particolari, quando c'è la necessità di operare con dei file wav di caratteristiche definite.
+- Permette di creare dei montaggi inserendo, tramite un'apposita KeyWord, dei files wav o mp3. Questo può essere utile per introdurre, durante la lettura, degli effetti particolari, come un colpo di tosse, una risata, o anche degli stacchi musicali.
+- Quando si salvano gli mp3, è possibile specificare la qualità degli stessi, in maniera da privilegiare la dimensioni o la qualità del risultato.
+- E' ora possibile convertire del testo in mp3 o wav suddividendolo in file da 5, 10, 20 o 30 minuti ciascuno.
+- Nel file "CustomTAG.TXT", è ora possibile inserire dei TAG personalizzati che compariranno poi nel menu contestuale (ad esempio i tag espressivi di Loquendo).
+- A scelta, tramite un'apposita opzione, è possibile attivare l'integrazione di DSpeech con il menu contestuale di Windows.
+- Tramite appositi file ".lng" è possibile traslare l'interfaccia in altre lingue.
+- Permette di aprire e leggere direttamente da internet un file o una pagina web e di memorizzare i link preferiti in un elenco.
+
+Sebbene DSpeech supporti nativamente anche le voci SAPI4, esprime il meglio delle sue potenzialità con le voci SAPI5 (alcune opzioni avanzate sono disponibili solo se si utilizzano queste ultime).
+
+
+
+CREAZIONE DEI DIALOGHI:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- Tramite il menu contestuale (Right Click) è possibile specificare con quale voce deve essere pronunciata una data frase, questo rende possibile la creazione di dialoghi tra voci diverse.
+
+
+
+UTILIZZO DEI TAG:
+~~~~~~~~~~~~~~~~~
+
+- E' possibile inserire appositi TAG che consentono di modificare le caratteristiche della voce mentre sta parlando (velocità, volume, frequenza etc).
+- Sempre tramite i TAG è possibile ottenere effetti particolari, come l'enfatizzazione di un termine, lo spelling di una o più parole e l'inserimento di pause.
+- In tutti i casi, i TAG hanno validità unicamente all'interno della stessa linea.
+
+
+
+OPZIONI DI RIPRODUZIONE:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Dall'interfaccia è possibile scegliere la voce da utilizzare ed è anche possibile, tramite una voce di menu, specificare una voce secondaria che verrà utilizzata per leggere il testo contenuto tra virgolette. Di essa si possono specificare una velocità ed un pitch diversi rispetto ai valori usati correntemente.
+- E' altresì possibile specificare il formato audio che verrà utilizzato. Ovviamente se si userà un formato sbagliato, il suono risulterà alterato (il tipico "Effetto Lattina").
+- Chi disponesse di più schede audio, dall'apposita casella, può scegliere quale utilizzare.
+- Se si spunta la casella "Tracking", man mano che il testo viene pronunciato, viene anche evidenziato a video.
+- E' anche possibile far sì che DSpeech pronunci la linea appena scritta ogni volta che si preme INVIO.
+- Tramite una voce di menu è possibile scegliere di personalizzare la velocità, il volume e il pitch di ogni voce in modo separato. In questo modo è possibile ottenere la massima personalizzazione nella creazione di dialoghi.
+- Un'altra opzione è quella che consente di convertire in wav o mp3 a volume sempre massimo; questa opzione, per ovvie ragioni, è incompatibile con la precedente (se selezionata, disattiva la precedente e viceversa).
+
+
+
+DOPPIAGGIO DEI FILM:
+~~~~~~~~~~~~~~~~~~~~
+
+- DSpeech è in grado di leggere i sottotitoli di un Film durante la sua visualizzazione, è quindi in grado di leggere i file SRT (il formato standard dei sottotitoli). 
+Tramite questa funzionalità è possibile far sì che sia DSpeech a leggere i sottotitoli mentre si guarda il film senza essere costretti a leggerli sullo schermo (cosa che spesso impedisce di seguire lo svolgimento). 
+- Si consiglia di impostare una voce diversa per la lettura del testo tra virgolette (menu "Options" --> "Customize voices in Quoted text"), ciò migliorerà notevolmente il risultato finale.
+- Per avviare il doppiaggio procedere come segue:
+
+1. Assicurarsi che nella stessa cartella ci siano sia il film che si intende vedere sia il file coi sottotitoli (.SRT).
+2. Assicurarsi che il film e il file dei sottotitoli abbiano lo stesso nome (ad esempio "Buffy.avi" e "Buffy.srt").
+3. Assicurarsi che sia spuntata l'opzione "Allows Manage SRT files" e aprire il file dei sottotitoli (ad es "Buffy.srt").
+4. Posizionare il cursore nel punto dei sottotitoli da cui si vuole che inizi il film.
+5. Premere "Speak".
+
+Penserà DSpeech ad avviare il lettore multimediale, a fargli aprire il film e a fargli iniziare la riproduzione dal punto desiderato. Penserà sempre lui a regolare automaticamente la velocità della riproduzione nel caso la voce rimanga "indietro" rispetto al video in modo che l'audio sia sempre sincronizzato col video.
+
+
+
+OPZIONI AVANZATE:
+~~~~~~~~~~~~~~~~~
+
+- Tramite il menu contestuale, è possibile inserire una serie di KeyWord che consentono di eseguire delle azioni particolari.
+In particolare:
+1. Avviare un programma esterno o aprire un file.
+2. Iniziare la riproduzione di un dato file di testo.
+3. Inserire un file wav o mp3 all'interno del dialogo che si sta creando (questo può servire per creare dialoghi con effetti sonori).
+4. Fare una pausa di tot secondi.
+5. Chiudere DSpeech.
+6. Sono anche disponibili delle istruzioni per il controllo di flusso, ma qui si rimanda alla sezione "SISTEMA DI SCRIPT E RICONOSCIMENTO VOCALE".
+
+- Tramite una voce di menu è possibile impostare la priorità di DSpeech a "Idle" in maniera che funzioni in totale background senza occupare la CPU destinata ad altri processi. Questa opzione è utile soprattutto quando si creano audiolibri visto che il processo di conversione può impegnare il PC anche per diverse ore.
+
+
+
+RIPRODUZIONE DEL TESTO:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- Tramite gli appositi pulsanti o i tasti di scelta rapida, è possibile iniziare e sospendere o riprendere la riproduzione esattamente nel punto in cui si vuole.
+
+
+
+REGISTRAZIONE DAL MICROFONO:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- DSpeech consente di registrare una o più frasi al microfono, salvarla sotto forma di file wav ed inserirla nel testo sotto forma di TAG. Questo consente di creare dei mix tra voci reali e sintetiche.
+La registrazione può essere attivata premendo l'apposito pulsante, se lo si preme una seconda volta la registrazione termina.
+E' quindi possibile riascoltare la registrazione stessa e, se ritenuta idonea, salvarla sotto forma di file ed inserirla automaticamente nel testo sotto forma di TAG.
+
+
+
+OPZIONI DI ACCESSIBILITà:
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Tramite l'opzione "Enable Hotkeys" è possibile pilotare DSpeech tramite HotKeys da tastiera anche quando questo non si trova in primo piano.
+- DAll'omonima voce di menu è possibile scegliere il "Verbose Mode". In queso modo DSpeech pronuncerà ad alta voce i valori del volume, velocità e pitch ogni volta che essi vengono selezionati tramite tastiera.
+- Mentre si fanno le prove col sistema di script può essere comodo attivare la funzione del tasto TAB, in modo che, alla sua pressione corrisponda una tabulazione invece che lo switch del fuoco tra i vari controlli. Ciò può essere fatto con una apposita voce del menu di accessibilità.
+- E' anche possibile integrare DSpeech con il menu contestuale di EXplorer, in modo tale da poter avviare, ad esempio, la conversione di un file testuale in mp3 senza dover passare per l'interfaccia di DSpeech.
+
+
+
+HOTKEYS:
+~~~~~~~~
+
+- Gli HotKeys si suddividono in due categorie, quelli interni al programma (come F5 per avviare la riproduzione o F4 per fare una pausa), che funzionano solo se si sta lavorando su DSpeech, e quelli globali, simili ai precedenti per funzionalità, ma che invece vengono intercettati e continuano a funzionare anche se si sta lavorando su altri programmi. Per attivare questi ultimi: menu Options --> Accessibility --> Enable Global HotKeys Validity.
+- Esiste una ulteriore opzione (menu Options --> Accessibility --> Allows to F10 HotKey to enable/disable global HotKeys validity) che consente, premendo il tasto F10 in un qualunque contesto (anche mentre si sta usando Office per esempio), di attivare o disattivare tutti gli HotKeys globali di DSpeech.
+In questo modo è possibile, ad esempio, ricominciare la lettura di un testo attualmente in fase di riproduzione senza dovere per questo abbandonare la finestra del programma su cui si stava lavorando. 
+E' quindi sufficiente premere F10, premere F9 (che ordina a DSpeech di ricominciare la lettura da capo) e poi premere nuovamente F10 per disattivare tutto il resto degli HotKeys che magari ci potrebbero disturbare se stiamo facendo altre cose. 
+Questa opzione può anche essere attivata semplicemete cliccando sull'iconcina della bacchetta.
+
+
+
+OPZIONI AUDIO:
+~~~~~~~~~~~~~~
+
+- E' possibile specificare la scheda audio in cui reindirizzare l'output e, soprattutto, il bitrate delle voci che si stanno utilizzando. Bisogna sempre cercare di utilizzare lo stesso bitrate dalle voci in uso, in caso contrario, si possono avere perdite di qualità o l'effetto lattina (come se la voce parlasse in una lattina).
+- In generale, il settaggio utilizzato dalla maggior parte delle voci SAPI5 è: "16 Khz 16 Bit Mono" o "22 Khz 16 Bit Mono", mentre le SAPI4 utilizzano tutte "11 KHz 16 Bit Mono" (default per SAPI4).
+- Questi settaggi sono particolarmente importanti quando si effettua una conversione in file Wav o Mp3.
+
+
+
+EDITING DEL TESTO:
+~~~~~~~~~~~~~~~~~~
+
+- Oltre alle funzioni di editing standard (find, replace, cut etc.) è integrata una funzione particolare, la "Remove Inappropriate Return Carriages". Essa serve ad eliminare tutti i ritorni a capo inutili presenti nel testo che potrebbero limitare la fluidità della lettura da parte delle voci artificiali. Infatti, spesso capita che un testo, per ragioni di impaginatura, contenga una serie di ritorni a capo che andrebbero ad impattare negativamente nella qualità di lettura da parte del TTS.
+
+
+
+CONVERSIONE DEL TESTO IN FILE WAV O MP3:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- E' possibile utilizzare DSpeech per la conversione del testo in un file Wav o Mp3. Se si sceglie il formato mp3, viene data la possibilità di specificare le caratteristiche della compressione; essa può essere settata in modo da privilegiare le dimensioni, la qualità audio del file prodotto, oppure in modo da ottenere una cosa bilanciata.
+
+
+
+CREAZIONE DI AUDIOLIBRI:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Volendo, si può di suddividere il testo in più file di tot minuti ciascuno. E' anche possibile utilizzare la suddivisione manuale del testo in files. In questo caso, è necessario inserire la KeyWord #BREAK ogni volta che si vuol cambiare file.
+- Spuntando l'opzione "Custom Volume Title", nel caso l'audiolibro sia suddiviso in più parti, ognuna di queste avrà un titolo che le è proprio, il titolo in questione verrà estrapolato automaticamente dal testo a meno che non venga               specificato di seguito alla KeyWord #BREAK.
+- Tramite la voce di menu "Append" è possibile unire più files di testo uno dietro all'altro. Tra l'uno e l'altro verrà inserita automaticamente la KeyWord #BREAK in modo da consentire la suddivisione del testo in files separati.
+- E' possibile inserire un silenzio di 300 msec all'inizio ed alla fine di ogni file creato, in modo da mantenere la compatibilità con i lettori CD o mp3 più vecchi.
+- Se si suddivide il testo in più volumi, all'inizio di ognuno viene inserito il titolo e il numero del volume. E' possibile scegliere di invertire ciò in modo che venga pronunciato prima il numero del volume e poi il titolo (ciò rende più agevole il ritrovamento di uno specifico volume tra tanti.
+- E' possibile specificare se si vuole che il programma, prima della conversione, rimuova tutte le andate a capo inappropriate dovute ad un'errata formattazione del testo. Ciò può essere molto utile per aumentare la fluidità di alcuni testi formattati male.
+- Volendo (opzioni audiolibri) si può personalizzare il titolo di ogni file nel quale viene suddiviso l'audiolibro, dopo la KeyWord #BREAK è possibile inserire del testo, questo verrà utilizzato come titolo, se non si specifica niente il titolo verrà estrapolato dal testo.
+- E' infine possibile specificare un ritardo (da 100 millisecondi a 5 secondi) da inserire automaticamente tra le frasi.
+
+
+
+CONVERSAZIONE CON L'IA:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Attivando la funzione "Enable IA reply when press Enter" si può avere l'illusione (più o meno) di conversare con un altro essere umano. Ogni volta che si preme INVIO la frase verrà analizzata e D-Speech risponderà con una frase adeguata.
+Di default è installata solo una personalità virtuale in italiano (Selena) che richiede quindi una voce femminile italiana per essere usata, ma il programma è in grado di utilizzarne anche delle altre (se mai verranno realizzate).
+In verità non si può parlare di una vera e propria intelligenza artificiale dato che il "core" dell'algoritmo si basa sul "pattern matching", ciononostante, questa tecnica è attualmente quella che dà i migliori risultati in termini di realismo delle risposte. Il database con le frasi-modello (che corrisponde al file SELENA.IA) è, in parte, derivato da un vecchio programma open-source (Babbea) nato a sua volta per prendere in giro un altro programma di IA (Eloisa) che veniva, a suo tempo, spacciato per programma pensante.
+In ogni caso il file è modificabile a piacimento.
+
+
+
+RICONOSCIMENTO VOCALE:
+~~~~~~~~~~~~~~~~~~~~~~
+
+Premendo il pulsante "Start ASR" si attiva il riconoscimento vocale. DSpeech cercherà di riconoscere le frasi che vengono pronunciate al microfono. Se si attiva la funzione "Enable IA reply when press Enter" si potrà conversare in tempo reale con la personalità virtuale.
+Tramite un'apposita voce di menu è possibile selezionare e specificare l'engine di riconoscimento vocale da utilizzare. Purtroppo l'unico engine gratuito, ad oggi, è il "MS English Recognizer" che è solo in inglese, per cui, se si vuole utilizzare altri linguaggi, o ci si rivolge a prodotti di terze parti o si aspetta la versione microsoft (che dicono sia in lavorazione).
+
+
+
+FORMATI DI FILE DI TESTO SUPPORTATI:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Sono supportati i seguenti tipi di file testuali:
+
+- TXT (File testuali semplici sia in formato ANSI che UNICODE).
+- RTF
+- HTM, HTML
+- PDF (Richiede sia presente "PDFToText.exe").
+- DOC (File prodotti con MS Word, per utilizzarli è necessario che Word sia installato).
+- XML (Sperimentale, formato utilizzato per i Feed RSS).
+
+
+CONFIGURAZIONE MINIMA:
+~~~~~~~~~~~~~~~~~~~~~~
+
+- Windows XP non ha bisogno che venga installato nessun pacchetto software aggiuntivo relativo al TTS visto che include già le librerie SAPI5.
+
+- Su Windows NT/2000, invece, bisogna installare il pacchetto MS-SAPI5.1 (6MB) scaricabile da uno dei seguenti link: 
+
+http://aldostools.mysite4now.com/sapi51.msi
+http://www.mbsoft.biz/download/sapi51.exe
+http://www.arlington.com.au/sapi51.msi
+
+- Su Windows NT/2000/XP/2003, se si vuole utilizzare anche le funzioni di riconoscimento vocale, bisogna installare almeno un engine ASR. La microsoft ne mette a disposizione uno gratuito (per ora soltanto in inglese) che può essere installato scaricando, dal sito Microsoft, l'intero pacchetto SAPI 5.1 SDK (60MB) che lo comprende, oppure (scelta consigliata) scaricando il solo engine (30MB) da questo link: 
+
+http://clans.gameclubcentral.com/shoot/SR.zip
+
+DSpeech richiede una risoluzione di almeno 1024x768.
+DSpeech non è testato su sistemi Windows 9x.
+
+
+
+LE VOCI:
+~~~~~~~~
+
+Le voci si dividono in due categorie:
+
+1. SAPI4 compatibili (queste voci sono più primitive ma si trovano facilmente e, in genere, sono gratuite).
+2. SAPI5 compatibili (queste voci invece sono molto più elevate qualitativamente, ma di gratuito c'è poco).
+
+
+- Windows XP/2003
+
+Windows XP/2003 integra già SAPI5 + una voce di qualità molto bassa (Microsoft SAM). E' possibile installare anche altre due voci simili (Mary e Mike) scaricabili gratuitamente da uno dei seguenti link:
+
+http://www.text-speech.com/voices/Sp5TTIntXP.msi
+http://download.microsoft.com/download/speechSDK/SDK/5.1/WXP/EN-US/Sp5TTIntXP.exe
+
+Se si vuole utilizzare anche le voci SAPI4 è necessario installare SAPI4 stesso, scaricabile da qui:
+
+http://activex.microsoft.com/activex/controls/sapi/spchapi.exe
+
+
+- Windows NT/2000
+
+Windows NT/2000, al contrario, integra solo il supporto SAPI4, per cui, se si vuole utilizzare le voci SAPI5, è necessario installare SAPI5 (che comprende SAM, Mary e Mike), scaricabile da uno dei seguenti link.
+
+http://aldostools.mysite4now.com/sapi51.msi
+http://www.mbsoft.biz/download/sapi51.exe
+http://www.arlington.com.au/sapi51.msi
+
+
+- Dal mio sito è possibile scaricare delle voci SAPI4 e SAPI5 gratuite nei vari linguaggi.
+
+Le voci SAPI4 sono sicuramente migliori di SAM, ma la loro qualità è veramente scarsa se confrontata con voci SAPI5 di terze parti (la differenza è abissale). Le migliori purtroppo sono a pagamento e, a volte, non è nemmeno facile procurarsele in maniera legale. In ogni caso, al top della categoria troviamo le voci dei segenti produttori:
+ 
+- Cepstral (Sono quelle con il miglior rapporto prezzo/prestazioni, la qualità non è agli stessi livelli delle voci più costose, ma rimangono comunque valide).
+- RealSpeak (Sicuramente ottime).
+- Loquendo (Sicuramente tra le migliori, soprattutto in termini di naturalezza ed espressività, costano anche tanto).
+- Acapela (Voci abbastanza buone, ma non il massimo in termini di naturalezza).
+- VoiceWare (Anche queste non sono affatto male, ma si trovano in poche lingue).
+- Ivona (Forse le migliori in assoluto sia per la naturalezza che per la prosodia).
+
+
+
+SISTEMA DI SCRIPT E RICONOSCIMENTO VOCALE:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DSpeech supporta un sistema di riconoscimento vocale che, unito ad un semplice sistema di script, lo rende in grado di creare dialoghi interattivi con l'utente del tipo:
+UTENTE: "Computer"
+PC: "Computer pronto, chi sei?"
+UTENTE: "Dimio"
+PC: "Benvenuto allora"
+Etc.
+
+Il sistema di script è molto simile al BASIC. La maggior parte delle Keywords sono progettate per funzionare solo in modalità diretta e, durante la conversione in file audio, vengono semplicemente ignorate, ciononostante alcune di esse, ad esempio la Keyword "#STOP", funzionano anche durante le conversioni. 
+
+Sono supportate le seguenti KeyWords (qui raggruppate per tipologia):
+
+
+#VOICE NomeVoce
+
+#DO
+#EXIT DO
+#LOOP [n]
+
+#RECOGNIZE Parola1, [Parola2], [OTHER_WORDS]...
+#RECOGNIZE_WITH_TIMEOUT Secondi, Parola1, [Parola2], [OTHER_WORDS]...
+
+#IF RECOGNIZED Parola1, [Parola2], [OTHER_WORDS]...
+#IF TIMEOUT
+#END IF
+
+#CALL NomeSub
+
+#SUB NomeSub
+#END SUB
+
+#RANDOM
+#CASE
+#END RANDOM
+
+#EXECUTE PathFileOProgramma
+#OPEN FileToSpeech.txt
+#PLAY FileName.wav
+
+#WAIT Secondi
+#DELAY MilliSecondi
+
+#REM
+#STOP
+#BREAK
+#CLEAR
+#CLOSE
+#DEL
+#HIDE
+#SHOW
+#TOP
+#WAIT_ANYKEY
+#SHUTDOWN
+#SELFDESTRUCT
+#SELFDESTRUCT_AND_SHUTDOWN
+
+
+DESCRIZIONE DEI COMANDI:
+
+#REM Commento
+Permette di inserire dei commenti nel testo che verranno completamente ignorati da DSpeech sia durante la riproduzione che nella conversione in file audio.
+
+#VOICE NomeVoce
+Cambia la voce narrante.
+
+#DO 
+...
+#EXIT DO 
+...
+#LOOP [n]
+Esegue un loop ciclico, quando incontra l'"exit do", ne esce. Se si specifica un numero [n], verrà eseguito solo il numero di cicli indicato.
+
+#RECOGNIZE Parola1, [Parola2], [OTHER_WORDS]...
+Si mette in attesa di un input vocale, appena questo viene fornito ne memorizza il risultato e prosegue con l'istruzione successiva.
+
+#RECOGNIZE_WITH_TIMEOUT Secondi, Parola1, [Parola2], [OTHER_WORDS]...
+Come il precedente ma con un timeout, se entro il tempo specificato l'input vocale non è stato fornito prosegue con l'istruzione successiva.
+
+#IF RECOGNIZED Parola1, [Parola2], [OTHER_WORDS]...
+...
+#END IF
+Esegue i comandi compresi tra l'IF e l'END IF se, dopo un #RECOGNIZE o un #RECOGNIZE_WITH_TIMEOUT è stata riconosciuta una delle parole specificate.
+
+#IF TIMEOUT
+...
+#END IF
+Esegue i comandi compresi tra l'IF e l'END IF se, dopo un #RECOGNIZE_WITH_TIMEOUT è passato il tempo specificato senza che l'utente fornisse un input vocale.
+
+#CALL NomeSub
+...
+#SUB NomeSub
+...
+#END SUB
+La prima istruzione, #CALL NomeSub, fa sì che l'esecuzione salti alla #SUB NomeSub mentre #END SUB, determina il ritorno all'istruzione immediatamente successiva alla #CALL NomeSub (è del tutto analogo al vecchio Gosub e Return del Basic).
+
+#RANDOM
+...
+#CASE
+...
+#CASE
+...
+#CASE
+...
+#END RANDOM
+Permette di eseguire in maniera casuale le istruzioni seguenti ad uno dei case.
+
+#EXECUTE PathFileOProgramma
+Apre un file specificato o avvia un programma.
+
+#OPEN FileToSpeech.txt
+Apre un file di testo e ne inizia la riproduzione.
+
+#STOP
+Termina l'esecuzione dello script e/o della riproduzione vocale o della conversione in file audio.
+
+#BREAK
+Keyword utilizzata per splittare un file in più mp3 in punti prestabiliti.
+
+#PLAY FileName.wav
+Riproduce un file wav.
+
+#WAIT Secondi
+Attende tot secondi (1-60) prima di proseguire.
+
+#DELAY MilliSecondi
+Attende il numero specificato di millisecondi (100-900) prima di proseguire.
+
+#CLOSE
+Chiude il programma DSpeech senza salvare i settaggi.
+
+#CLEAR
+Cancella il contenuto della finestra.
+
+#DEL PathFile
+Cancella il file o la cartella indicata.
+
+#HIDE
+Rende invisibile la finestra del programma.
+
+#SHOW
+Visualizza nuovamente la finestra del programma annullando un precedente comando #HIDE.
+
+#TOP
+Metti in primo piano la finestra principale di DSpeech.
+
+#WAIT_ANYKEY
+Si mette in attesa che l'utente prema un tasto qualsiasi e poi prosegue.
+
+#SHUTDOWN
+Spegne il computer, se si vuole che DSpeech si chiuda in un modo specifico, ad esempio senza salvare i settaggi, far seguire al comando di Shutdown l'apposito comando di chiusura di DSpeech, come #CLOSE o #SELFDESTRUCT.
+
+#SELFDESTRUCT
+Chiude DSpeech e cancella il file "DSpeech.exe" (cioè si auto cancella dal disco), il file "DSpeech.ini" e il file eventualmente aperto.
+
+#SELFDESTRUCT_AND_SHUTDOWN
+Cancella "DSpeech.exe", "DSpeech.ini" e l'eventuale file aperto e subito dopo spegne il computer.
+
+
+Nel menu contestuale (right-click) è possibile trovare tutte queste KEYWORDS con relativi ESEMPI.
+Un esempio di script per il riconoscimento vocale potrebbe essere il seguente:
+
+
+#VOICE Luca
+Io sono Angelus, il computer di Dimitri. Tu chi sei?
+#DO
+	#RECOGNIZE Dimitri, Gloria, OTHER_WORDS
+	#IF RECOGNIZED Dimitri
+		Angelus in attesa di istruzioni.
+		#EXIT DO
+	#END IF	
+	#IF RECOGNIZED Gloria
+		Hai sbagliato computer, il tuo è quello di fianco.
+		#EXIT DO
+	#END IF	
+	#IF RECOGNIZED OTHER_WORDS
+		#RANDOM
+		#CASE
+			Puoi ripetere per favore? Non ho capito il tuo nome.
+		#CASE
+			Cos'hai detto? Puoi Ripetere?
+		#CASE
+			Non ho capito quello che hai detto, forse, semplicemente, il tuo nome non lo conosco.
+		#END RANDOM
+	#END IF	
+#LOOP
+
+A meno che non si disponga di engine ASR commerciali compatibili con SAPI5 (come l'ASR della Loquendo), ci si limiterà ad usare l'engine gratuito della Microsoft (sul mio sito si trova il link) che si basa sulla fonetica inglese, per cui, per far riconoscere alcune parole, è spesso necessario adattarle alla pronuncia inglese. Ad esempio, per far riconoscere al computer la parola "Russia" bisognerà scrivere "Rassya".
+
+
+
+SHORTCUTS:
+~~~~~~~~~~
+
+Tutte le funzioni dell'interfaccia solo associate a degli shortcut di tastiera, sono inoltre supportati i seguenti tasti speciali:
+
+  F1 = Vai alla casella di editing
+  F4 = Pause/Resume
+  F5 = Speak/Stop
+  F6 o ALT + UP = Speak Previous Line
+  F7 o ALT + LEFT = Speak Current Line
+  F8 o ALT + DOWN = Speak Next Line
+  F9 o ALT + RIGHT = Speak From Cursor
+  F11 = Passa alla voce precedente
+  F12 = Passa alla voce successiva
+  F11+SHIFT = Passa alla prima voce della lista.
+  F12+SHIFT = Passa all'ultima voce della lista.
+
+  ESC = Stop
+  ALT+1 = Aumenta il volume
+  ALT+2 = Diminuisce il volume
+  ALT+3 = Aumenta la velocità
+  ALT+4 = Diminuisce la velocità
+  ALT+5 = Aumenta il pitch
+  ALT+6 = Diminuisce il pitch
+
+
+
+LINEA DI COMANDO:
+~~~~~~~~~~~~~~~~~
+
+E' possibile specificare un nome di file da aprire e riprodurre automaticamente. Questo permette, ad esempio, di eseguire in maniera automatica uno script.
+
+
+SINTASSI:
+
+DSPEECH [/Play] [/Speak] [/Wav] [/Mp3] [/Ogg] [/Aac] [/Wma] [/Hidden|/HiddenFix|/Minimize] [/Voice "VoiceName"] [FileToSpeech.txt] [FileOutput.mp3]
+
+E' possibile indicare come unica opzione un file di testo da aprire, nell'esempio seguente DSpeech si limiterà ad aprire l'interfaccia e a caricare il file "FileToSpeech.txt".
+
+DSpeech.exe FileToSpeech.txt
+
+/Voice = Consente di specificare la voce da utilizzare, un esempio potrebbe essere il seguente:
+DSpeech /VOICE "Silvia"
+La stringa col nome della voce deve essere tra virgolette, non è necessario che contenga il nome completo della Voce con la sua descrizione, anche un semplice /VOICE "Sil" potrebbe essere sufficiente.
+
+/Play = Consente di avviare la riproduzione di un file o di una pagina web. Nei seguenti esempi vengono caricati i file "FileToSpeech.txt" e "index.html" e ne viene avviata la riproduzione.
+
+DSpeech.exe /Play FileToSpeech.txt
+DSpeech.exe /Play http://dimio.altervista.org/ita/index.html
+
+/Speak = Consente di pronunciare una breve frase. Nel seguente esempio viene pronunciata la parola "Hello!" senza che venga aperta l'interfaccia di DSpeech.
+
+DSpeech.exe /Speak Hello!
+
+/Mp3 = Consente di convertire un file testuale in un file Mp3. Nel primo dei seguenti esempi il file "Origine.txt" viene convertito in un file di nome "origine.mp3". Mentre nel secondo esempio il file "Origine.txt" viene convertito in un file di nome "Destinazione.mp3". Nel terzo esempio il file web index.html viene convertito in un file di nome "Destinazione.mp3".
+
+DSpeech.exe /mp3 origine.txt
+DSpeech.exe /mp3 origine.txt destinazione.mp3
+DSpeech.exe /mp3 http://dimio.altervista.org/ita/index.html destinazione.mp3
+
+/Waw = Consente di convertire un file testuale in un file Wav. (Vedi sopra).
+
+/Ogg = Consente di convertire un file testuale in un file Ogg Vorbis. (Vedi sopra).
+
+/Aac = Consente di convertire un file testuale in formato AAC per dispositivi Apple.
+
+/Wma = Consente di convertire un file testuale in formato WMA.
+
+/Minimize = Minimizza la finestra all'avvio.
+
+/Hidden = Indica al programma di non mostrare l'interfaccia grafica, DSpeech eseguirà il compito assegnatogli rimanendo in background e, al termine di questo, automaticamente si chiuderà. Nel seguente esempio il file di testo "origine.txt" viene convertito in "destinazione.mp3" senza mostrare l'interfaccia grafica.
+
+DSpeech.exe /Mp3 /Hidden origine.txt destinazione.mp3
+
+/Hiddenfix = Come il precedente, da usare a sostituzione di questi nel caso vi siano problemi (fischi, crepitii) con i tag espressivi delle voci loquendo (i tag espressivi sono i colpi di tosse, le risate etc.)
+
+In generale, la combinazione che consiglio di usare è quella dell'esempio seguente che indica a DSpeech di convertire, pur rimanendo in background senza mostrare l'interfaccia, un file testuale in un file mp3 e di chiudersi a procedura completata. Il parametro [destinazione] è opzionale.
+
+DSpeech.exe /Mp3 /Hidden origine.txt destinazione.mp3
+
+
+
+CONVERSIONI MULTIPLE (BATCH):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Le conversioni multiple possono essere ottenute in due modi:
+
+1. Tramite la voce di menu "Batch Conversion..."
+
+2. Tramite la creazione di un file Batch che contenga i comandi di conversione dei files che si vogliono convertire.
+Ad esempio, l'esecuzione del seguente file batch:
+
+DSpeech.exe /mp3 File1.txt
+DSpeech.exe /mp3 File2.txt
+
+Determina la creazione dei file "File1.mp3" e "File2.mp3" risultato della conversione dei due files di origine.
+
+
+
+PROBLEMI NOTI:
+~~~~~~~~~~~~~~
+
+I Tag espressivi delle voci Loquendo (ad esempio "\_Laugh_01" o "\_Ahahah") sono incompatibili con il cambio del parametro PITCH. In dettaglio, se si modifica il Pitch, anche per una sola volta, i Tag espressivi, nei salvataggi successivi, verranno accompagnati da un fruscio molto brutto da sentire. L'unico modo per farli funzionare di nuovo è chiudere DSpeech e riavviarlo un'altra volta.
+
+
+
+Note:
+~~~~~
+
+- Quando si inserisce un file mp3 nel testo, specie se di grosse dimensioni, può essere avvertita una piccola pausa tra la riproduzione della linea precedente e la riproduzione del file audio, ciò è normale e non costituisce un difetto, in ogni caso, quando si va a salvare il risultato sotto forma di file wav o mp3, la pausa scompare completamente.
+- Per la compressione in mp3 viene utilizzato il codec Lame (www.mp3dev.org), esso corrisponde al file "Lame.exe" incluso nel pacchetto.
+- Per la compressione in Ogg Vorbis viene utilizzato l'encoder "oggenc.exe" facente parte del pacchetto "vorbis-tools-1.0.1-win32".
+- Per l'apertura dei file PDF viene utilizzato il file "pdftotext.exe", facente parte del pacchetto "Xpdf" (http://www.foolabs.com/xpdf/).
+- Per la compressione in AAC viene utilizzato il file "neroaacenc.exe" della Nero AG (sono gli stessi di Nero Burning Rom).
+
+
+
+LICENZA:
+~~~~~~~~
+Il programma viene distribuito con la licenza Freeware (fare riferimento al file incluso al pacchetto per i dettagli). 
+Questo, riassunto in due parole, significa: il software è gratuito e potete usarlo come vi pare, anche integrarlo in un CD, in un programma vostro o in un pacchetto commerciale da rivendere se volete. L'unica cosa che non è permessa è la decompilazione e la modifica dei sorgenti.
+Per la lettura dei PDF e l'encoding nei vari formati (mp3, ogg, aac) rifarsi alla licenza relativa dei singoli file exe utilizzati per la specifica funzione richiesta (pdftotext --> apre i pdf, oggenc --> salva in ogg vorbis, neroaacenc --> salva in aac, wmaencode --> Salva in wma, lame --> Salva in mp3) si tratta comunque sempre di freeware, per cui non dovrebbero esserci problemi in ogni caso.
+
+
+
+PROGRAMMATORI:
+~~~~~~~~~~~~~~
+
+Dimitrios Coutsoumbas (Dimio)
+SKYPE  : katafratto
+E-MAIL : cyberdimio@gmail.com
+HOME   : http://dimio.altervista.org/
+
+
+
+BETA-TESTERS:
+~~~~~~~~~~~~~
+
+Talksina (talksina@gmail.com)
