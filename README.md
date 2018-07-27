@@ -1,4 +1,6 @@
 # gmaps-pattern-recognition - Google Maps interpretation tool for the visually impaired
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Folivierschultz%2Fgmaps-pattern-recognition.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Folivierschultz%2Fgmaps-pattern-recognition?ref=badge_shield)
+
 
 ## Summary
 
@@ -29,3 +31,6 @@ MIT License
 Copyright (c) 2014 Olivier Schultz
 
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Folivierschultz%2Fgmaps-pattern-recognition.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Folivierschultz%2Fgmaps-pattern-recognition?ref=badge_large)
